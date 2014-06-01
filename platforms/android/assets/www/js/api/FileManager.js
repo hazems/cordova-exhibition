@@ -1,0 +1,53 @@
+//Singleton Object
+var FileManager = (function () {     
+  var instance;
+ 
+  function createObject() {
+      var audioMedia;
+      var BASE_DIRECTORY = "CExhibition";
+      var FILE_BASE = "file:///";
+      
+      return {
+          copyFileToAppDirectory: function (filePath, callback) {                  
+             var callback = {};
+                
+             callback.requestSuccess = function (dirEntry) {
+                 if (filePath.indexOf(FILE_BASE) != 0) {
+                     filePath = filePath.replace("file:/", FILE_BASE);
+                 }
+             
+                 window.resolveLocalFileSystemURL(filePath, function(file) {
+                     var filename = filePath.replace(/^.*[\\\/]/, '');
+                         
+                     file.moveTo(dirEntry, filename);
+                     
+                     callback.copySuccess(dirEntry.toURL() + "/" + filename);
+                  }, callback.copyError);  
+             };  
+             
+             callback.requestError = function (error) {
+                 console.log(error);
+             };
+
+             this.requestApplicationDirectory(callback);                 
+          },
+          requestApplicationDirectory: function (callback) {
+              var fileSystemReady = function(fileSystem) {
+                  fileSystem.root.getDirectory(BASE_DIRECTORY, {create: true}, callback.requestSuccess);                    
+              };              
+              
+              window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, fileSystemReady, callback.requestError);
+          }
+    };
+  };
+ 
+  return {
+    getInstance: function () {
+      if (!instance) {
+          instance = createObject();
+      }
+ 
+      return instance;
+    }
+  }; 
+})();

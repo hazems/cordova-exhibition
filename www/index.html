@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/app.css" />
+        <link rel="stylesheet" href="jqueryMobile/jquery.mobile-1.4.0.min.css">    
+          
+        <script src="jqueryMobile/json2.js"></script>            
+        <script src="jqueryMobile/jquery-1.10.2.min.js"></script>                                  
+        <script src="jqueryMobile/jquery.mobile-1.4.0.min.js"></script>   
+        <script src="jqueryMobile/jqm.page.params.js"></script>      
+                     
+        <title>Cordova Exhibition</title>
+    </head>
+    <body>        
+         <div data-role="page" id="features">
+             <div data-role="header">            
+                <h1>Main Features</h1>                 
+             </div>
+             <div data-role="content">
+                 <ul data-role="listview" id="memoListView">
+                     <li><a href="#accelerometer">Accelerometer</a></li>
+                     <li><a href="#camera">Camera</a></li>
+                     <li><a href="#contacts">Contacts</a></li>
+                     <li><a href="#connection">Connection</a></li>
+                     <li><a href="#compass">Compass</a></li>
+                     <li><a href="#geolocation">Geolocation</a></li>                     
+                     <li><a href="#media">Media / Capture</a></li>
+                     <li><a href="#notification">Notification</a></li>
+                     <li><a href="#storage">Storage</a></li>
+                 </ul>                  
+             </div>
+             <div data-role="footer" data-position="fixed">
+                <h1>Powered by Apache Cordova</h1>
+             </div>                
+         </div>
+        
+        <div data-role="page" id="camera">
+           <div data-role="header">                               
+               <h1>Camera</h1>                                  
+               <a href="#" data-role="button" data-rel="back" data-icon="back">Back</a> 
+            </div>
+            <div data-role="content">
+            	<h1>Welcome to the Camera Gallery</h1>
+            	<p>Click 'Get Picture' button below</p>
+                <div class="center-wrapper">
+                    <input type="button" id="getPicture" data-icon="camera" value="Get Picture" 
+                           class="center-button" data-inline="true"/>
+                </div>
+                <br/>
+                 
+                <div style="width: 100%;">
+                    <img id="imageView" style="width: 100%;"></img>
+                </div>  
+                
+                <div data-role="popup" id="pictureTypeSelection">
+                    <ul data-role="listview" data-inset="true" style="min-width:210px;">
+                        <li data-role="divider" data-theme="a">Get Picture From</li>
+                        <li><a id="pictureFromGallery" href="#">Gallery</a></li>
+                        <li><a id="pictureFromCamera" href="#">Camera</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>        
+        
+        <div data-role="page" id="media">
+            <div data-role="header">                               
+               <h1>Media / Capture</h1>                                  
+               <a href="#" data-role="button" data-rel="back" data-icon="back">Back</a> 
+            </div>
+            <div data-role="content">
+               <h1>Welcome to the Media / Capture Gallery</h1>
+               <p>Click 'Record Sound' or 'Record Sound Externally' button below to start recording your voice.</p>
+               <div data-role="fieldcontain">
+                   <input type="hidden" id="location"/> 
+                   <div class="center-wrapper">
+                       <input type="button" id="recordSound" data-icon="audio" value="Record Sound"/>
+                       <input type="button" id="recordSoundExt" data-icon="audio" value="Record Sound Externally"/>
+                       <input type="button" id="playSound" data-icon="refresh" value="Playback"/><br/>
+                   </div>  
+                       
+                   <div data-role="popup" id="recordSoundDialog" data-dismissible="false" style="width:250px">
+                       <div data-role="header">
+                           <h1>Recording</h1>
+                       </div>
+                    
+                       <div data-role="content">
+                           <div class="center-wrapper">
+                               <div id="soundDuration"></div>
+                               <input type="button" id="stopRecordingSound" value="Stop Recording" 
+                                      class="center-button" data-inline="true"/>
+                           </div>
+                       </div>
+                    </div>                                                                
+                 </div>
+            </div>                 
+        </div>               
+        
+        <div data-role="page" id="storage">
+            <div data-role="header">                               
+               <h1>Storage</h1>                                  
+               <a href="#" data-role="button" data-rel="back" data-icon="back">Back</a> 
+            </div>
+            <div data-role="content">
+                <p>Iam the "storage"</p>
+            </div>           
+        </div>         
+        
+        <div data-role="page" id="contacts">
+            <div data-role="header">                               
+               <h1>Contacts</h1>                                  
+               <a href="#" data-role="button" data-rel="back" data-icon="back">Back</a> 
+            </div>
+            <div data-role="content">
+                <p>Iam the "contacts"</p>
+            </div>           
+        </div>          
+        
+        <div data-role="page" id="connection">
+            <div data-role="header">                               
+               <h1>Connection</h1>                                  
+               <a href="#" data-role="button" data-rel="back" data-icon="back">Back</a> 
+            </div>
+            <div data-role="content">
+               <h1>Welcome to the Connection Gallery</h1>
+               <p>Click 'Get Connection Type' button below to know the connection type.</p>
+               <div data-role="fieldcontain">
+                   <input type="button" id="getConnectionType" value="Get Connection Type"/><br/>
+                       
+                   <div id="connectionType">
+                    </div>                                                                
+                 </div>
+            </div>        
+        </div>     
+        
+        <div data-role="page" id="geolocation">
+            <div data-role="header">                               
+               <h1>Geolocation</h1>                                  
+               <a href="#" data-role="button" data-rel="back" data-icon="back">Back</a> 
+            </div>
+            <div data-role="content">
+               <h1>Welcome to the Geolocation Gallery</h1>
+               <p>Click 'Start Watch Position' button below to start watch position.</p>
+               <div data-role="fieldcontain">
+                   <input type="button" id="startWatchPosition" value="Start Watch Position"/>
+                   <input type="button" id="stopWatchPosition" value="Stop Watch Position"/><br/>
+                       
+                   <div id="position">
+                    </div>                                                                
+                 </div>
+            </div>        
+        </div>      
+        
+        <div data-role="page" id="accelerometer">
+            <div data-role="header">                               
+               <h1>Accelerometer</h1>                                  
+               <a href="#" data-role="button" data-rel="back" data-icon="back">Back</a> 
+            </div>
+            <div data-role="content">
+               <h1>Welcome to the Accelerometer Gallery</h1>
+               <p>Click 'Start Watch Acceleration' button below to start watch acceleration.</p>
+               <div data-role="fieldcontain">
+                   <div class="center-wrapper">
+                       <input type="button" id="startWatchAcceleration" value="Start Watch Acceleration"/>
+                       <input type="button" id="stopWatchAcceleration" value="Stop Watch Acceleration"/><br/>
+                   </div>  
+                       
+                   <div id="acceleration">
+                    </div>                                                                
+                 </div>
+            </div>             
+        </div>
+        
+        <div data-role="page" id="compass">
+            <div data-role="header">                               
+               <h1>Compass</h1>                                  
+               <a href="#" data-role="button" data-rel="back" data-icon="back">Back</a> 
+            </div>
+            <div data-role="content">
+               <h1>Welcome to the Compass Gallery</h1>
+               <p>Click 'Start Watch Heading' button below to start watch heading using your device's compass.</p>
+               <div data-role="fieldcontain">
+                   <div class="center-wrapper">
+                       <input type="button" id="startWatchHeading" value="Start Watch Heading"/>
+                       <input type="button" id="stopWatchHeading" value="Stop Watch Heading"/><br/>
+                   </div>  
+                       
+                   <div id="compassHeading">
+                    </div>                                                                
+                 </div>
+            </div>        
+        </div> 
+        
+        <div data-role="page" id="notification">
+            <div data-role="header">                               
+               <h1>Notification</h1>                                  
+               <a href="#" data-role="button" data-rel="back" data-icon="back">Back</a> 
+            </div>
+            <div data-role="content">
+                <p>Iam the Notification</p>
+            </div>           
+        </div>         
+                        
+        <script type="text/javascript" src="cordova.js"></script>
+        
+        <!-- API JS files -->
+        <script type="text/javascript" src="js/api/FileManager.js"></script>      
+        <script type="text/javascript" src="js/api/MemoManager.js"></script> 
+        <script type="text/javascript" src="js/api/CameraManager.js"></script> 
+        <script type="text/javascript" src="js/api/MediaManager.js"></script> 
+        <script type="text/javascript" src="js/api/CompassManager.js"></script>        
+        <script type="text/javascript" src="js/api/AccelerometerManager.js"></script>
+        <script type="text/javascript" src="js/api/ConnectionManager.js"></script>
+        <script type="text/javascript" src="js/api/GeolocationManager.js"></script>
+                
+        <!-- View controller files -->
+        <script type="text/javascript" src="js/vc/common.js"></script>            
+        <script type="text/javascript" src="js/vc/camera.js"></script>
+        <script type="text/javascript" src="js/vc/media.js"></script>   
+        <script type="text/javascript" src="js/vc/compass.js"></script> 
+        <script type="text/javascript" src="js/vc/accelerometer.js"></script>   
+        <script type="text/javascript" src="js/vc/connection.js"></script> 
+        <script type="text/javascript" src="js/vc/geolocation.js"></script>                                                        
+    </body>
+</html>
