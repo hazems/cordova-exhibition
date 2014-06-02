@@ -26,20 +26,20 @@
     });
     
     function getPhoto(fromGallery) {
-        var capturingCallback = {};
+        var callback = {};
         
-        capturingCallback.captureSuccess = handleCaptureSuccess;
-        capturingCallback.captureError = handleCaptureError;
+        callback.onSuccess = onSuccess;
+        callback.onError = onError;
         
-        cameraManager.getPicture(capturingCallback, fromGallery);        
+        cameraManager.getPicture(callback, fromGallery);        
     }
     
-    function handleCaptureSuccess(fileURI) {            
+    function onSuccess(fileURI) {            
         $("#imageView").show();  
         $("#imageView").attr("src", fileURI);
     }
     
-    function handleCaptureError(message) {
+    function onError(message) {
         console.log("Camera capture error");
     }
 })();

@@ -9,12 +9,12 @@
             
             disableActionButtons();
             
-            var recordingCallback = {};
+            var callback = {};
             
-            recordingCallback.recordSuccess = handleRecordSuccess;
-            recordingCallback.recordError = handleRecordError;
+            callback.onSuccess = handleRecordSuccess;
+            callback.onError = handleRecordError;
             
-            mediaManager.startRecording(recordingCallback);
+            mediaManager.startRecording(callback);
             
             var recTime = 0;
             
@@ -25,7 +25,7 @@
             recInterval = setInterval(function() {
                                          recTime = recTime + 1;
                                          document.getElementById("soundDuration").innerHTML = "Duration: " + recTime + " seconds";
-                                      }, 1000);            
+                                     }, 1000);            
         });       
         
         $("#recordSoundExt").on("tap", function(e) {
@@ -33,12 +33,12 @@
             
             disableActionButtons();
             
-            var recordingCallback = {};
+            var callback = {};
             
-            recordingCallback.recordSuccess = handleRecordSuccess;
-            recordingCallback.recordError = handleRecordError;
+            callback.onSuccess = handleRecordSuccess;
+            callback.onError = handleRecordError;
             
-            mediaManager.recordVoiceExternally(recordingCallback);         
+            mediaManager.recordVoiceExternally(callback);         
         });
         
         $("#recordSoundDialog").on("popupafterclose", function(event, ui) {
@@ -55,26 +55,26 @@
             
             disableActionButtons();
         
-            var playCallback = {};
+            var callback = {};
             
-            playCallback.playSuccess = handlePlaySuccess;
-            playCallback.playError = handlePlayError;
+            callback.onSuccess = handlePlaySuccess;
+            callback.onError = handlePlayError;
             
-            mediaManager.playVoice($("#location").val(), playCallback);
+            mediaManager.playVoice($("#location").val(), callback);
         });      
         
         initPage();
     });
     
     $(document).on("pagebeforehide", "#media", function(e) {
-    	
-    	//Make sure to stop any playing voices when the media view is left. 
-    	mediaManager.cleanUpResources();
+        
+        //Make sure to stop any playing voices when the media view is left. 
+        mediaManager.cleanUpResources();
         enableActionButtons();
     });    
     
     function initPage() {
-        $("#playSound").closest('.ui-btn').hide(); 	
+        $("#playSound").closest('.ui-btn').hide();     
     }
     
     function handleRecordSuccess(filePath) {
@@ -84,7 +84,7 @@
     }
     
     function handleRecordError(error) {
-    	console.log("An error occurs during recording: " + error.code);
+        console.log("An error occurs during recording: " + error.code);
         enableActionButtons();
     }  
     
@@ -94,10 +94,10 @@
     }
     
     function handlePlayError(error) {
-    	if (error.code) {
+        if (error.code) {
             console.log("An error happens when playing sound file ...");
             enableActionButtons();
-    	}
+        }
     }
     
     function enableActionButtons() {

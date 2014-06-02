@@ -8,94 +8,94 @@ var MediaManager = (function () {
       var audioMedia;
       
       return {
-    	     startRecording : function (recordingCallback) {
-    	         var recordVoice = function(dirEntry) {
-    	             var basePath = "";
-    	             var dirPath = dirEntry.toURL();
-    	             
-    	             if (dirPath) {
-    	                 basePath = dirPath + "/";
-    	             }
+             startRecording : function (callback) {
+                 var recordVoice = function(dirEntry) {
+                     var basePath = "";
+                     var dirPath = dirEntry.toURL();
+                     
+                     if (dirPath) {
+                         basePath = dirPath + "/";
+                     }
 
-    	             var mediaFilePath = basePath + (new Date()).getTime() + ".wav";
-    	            
-    	             var recordingSuccess = function() {
-    	                 recordingCallback.recordSuccess(mediaFilePath);
-    	             };            
-    	            
-    	             recordingMedia = new Media(mediaFilePath, recordingSuccess, recordingCallback.recordError);
+                     var mediaFilePath = basePath + (new Date()).getTime() + ".wav";
+                    
+                     var recordingSuccess = function() {
+                         callback.onSuccess(mediaFilePath);
+                     };            
+                    
+                     recordingMedia = new Media(mediaFilePath, recordingSuccess, callback.onError);
 
-    	             // Record audio
-    	             recordingMedia.startRecord(); 
-    	         };
-    	        
-    	         if (device.platform === "Android") {
-    	             var callback = {};
-    	        
-    	             callback.requestSuccess = recordVoice;              
-    	             callback.requestError = recordingCallback.recordError;
-
-    	             fileManager.requestApplicationDirectory(callback);     
-    	         } else {
-
-    	             recordVoice();
-    	         }
-    	    },
-    	    stopRecording : function (recordingCallback) {
-    	        recordingMedia.stopRecord();   
-    	        recordingMedia.release();   
-    	    },
-    	    playVoice : function (filePath, playCallback) {
-    	        if (filePath) {                  
-    	            this.cleanUpResources();
-    	               
-    	            audioMedia = new Media(filePath, playCallback.playSuccess, playCallback.playError);
-    	          
-    	            // Play audio
-    	            audioMedia.play();
-    	        }            
-    	    },  
-            recordVoiceExternally: function (recordingCallback) {
+                     // Record audio
+                     recordingMedia.startRecord(); 
+                 };
                 
-                var recordSuccess = function(mediaFiles) {
+                 if (device.platform === "Android") {
+                     var cb = {};
+                
+                     cb.requestSuccess = recordVoice;              
+                     cb.requestError = callback.onError;
+
+                     fileManager.requestApplicationDirectory(cb);     
+                 } else {
+
+                     recordVoice();
+                 }
+            },
+            stopRecording : function (callback) {
+                recordingMedia.stopRecord();   
+                recordingMedia.release();   
+            },
+            playVoice : function (filePath, callback) {
+                if (filePath) {                  
+                    this.cleanUpResources();
+                       
+                    audioMedia = new Media(filePath, callback.onSuccess, callback.onError);
+                  
+                    // Play audio
+                    audioMedia.play();
+                }            
+            },  
+            recordVoiceExternally: function (callback) {
+                
+                var onSuccess = function(mediaFiles) {
                     if (mediaFiles && mediaFiles[0]) {        
                         var currentFilePath = mediaFiles[0].fullPath;
                         
-           	            if (device.platform === "Android") {
+	                    if (device.platform === "Android") {
 	                        var fileCopyCallback = {};
-	                        
+	                    
 	                        fileCopyCallback.copySuccess = function(filePath) {
-	                            recordingCallback.recordSuccess(filePath);
+	                            callback.onSuccess(filePath);
 	                        };
-	                        
+	                    
 	                        fileCopyCallback.copyError = function(evt) {
 	                            console.log("Unexpected failure of File copy due to the following error: " + evt.target.error.code);
 	                        };                      
-	                        
+	                    
 	                        fileManager.copyFileToAppDirectory(currentFilePath, fileCopyCallback);
-           	            } else {
-                            recordingCallback.recordSuccess(currentFilePath);
-           	            }
+	                    } else {
+	                        callback.onSuccess(currentFilePath);
+	                    }
                     }
                 };
                 
-                navigator.device.capture.captureAudio(recordSuccess, 
-                                                      recordingCallback.recordError, 
+                navigator.device.capture.captureAudio(onSuccess, 
+                                                      callback.onError, 
                                                       {limit: 1});
-            },    	    
-    	    cleanUpResources : function () {
-    	        if (audioMedia) {
-    	            audioMedia.stop();
-    	            audioMedia.release();
-    	            audioMedia = null;
-    	        } 
-    	        
-    	        if (recordingMedia) {
-    	      	    recordingMedia.stop();
-    	      	    recordingMedia.release();
-    	      	    recordingMedia = null;
-    	        } 
-    	    }
+            },            
+            cleanUpResources : function () {
+                if (audioMedia) {
+                    audioMedia.stop();
+                    audioMedia.release();
+                    audioMedia = null;
+                } 
+                
+                if (recordingMedia) {
+                    recordingMedia.stop();
+                    recordingMedia.release();
+                    recordingMedia = null;
+                } 
+            }
     };
   };
  

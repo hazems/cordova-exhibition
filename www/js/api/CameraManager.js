@@ -6,15 +6,15 @@ var CameraManager = (function () {
       var fileManager = FileManager.getInstance();      
       
       return {
-          getPicture: function (capturingCallback, fromGallery) {      
+          getPicture: function (callback, fromGallery) {      
               var source = Camera.PictureSourceType.CAMERA;
               
               if (fromGallery) {
                   source = Camera.PictureSourceType.PHOTOLIBRARY;  
               }
               
-              navigator.camera.getPicture(capturingCallback.captureSuccess, 
-            		  					  capturingCallback.captureError, 
+              navigator.camera.getPicture(callback.onSuccess, 
+                                          callback.onError, 
                                           { 
                                               quality: 30, 
                                               destinationType: Camera.DestinationType.FILE_URI, 

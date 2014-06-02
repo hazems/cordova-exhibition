@@ -243,14 +243,12 @@
                <h1>Welcome to the Compass Gallery</h1>
                <p>Click 'Start Watch Heading' button below to start watch heading using your device's compass.</p>
                <div data-role="fieldcontain">
-                   <div class="center-wrapper">
-                       <input type="button" id="startWatchHeading" value="Start Watch Heading"/>
-                       <input type="button" id="stopWatchHeading" value="Stop Watch Heading"/><br/>
-                   </div>  
+                   <input type="button" id="startWatchHeading" value="Start Watch Heading"/>
+                   <input type="button" id="stopWatchHeading" value="Stop Watch Heading"/><br/>
                        
                    <div id="compassHeading">
-                    </div>                                                                
-                 </div>
+                   </div>                                                                
+                </div>
             </div>        
         </div> 
         
@@ -260,8 +258,19 @@
                <a href="#" data-role="button" data-rel="back" data-icon="back">Back</a> 
             </div>
             <div data-role="content">
-                <p>Iam the Notification</p>
-            </div>           
+               <h1>Welcome to the Notification Gallery</h1>
+               <p>Click the buttons below to check notifications.</p>
+               <div data-role="fieldcontain">
+                   <input type="button" id="showAlert" value="Show Alert"/>
+                   <input type="button" id="showConfirm" value="Show Confirm"/>
+                   <input type="button" id="showPrompt" value="Show Prompt"/>
+                   <input type="button" id="vibrate" value="Vibrate"/>
+                   <input type="button" id="beep" value="Beep"/>
+                                                                                
+                   <div id="notificationResult">
+                   </div>                                                                
+                </div>
+            </div>             
         </div>         
                         
         <script type="text/javascript" src="cordova.js"></script>
@@ -277,7 +286,8 @@
         <script type="text/javascript" src="js/api/GeolocationManager.js"></script>
         <script type="text/javascript" src="js/api/GlobalizationManager.js"></script>
         <script type="text/javascript" src="js/api/DeviceManager.js"></script>
-                        
+        <script type="text/javascript" src="js/api/NotificationManager.js"></script>
+                                
         <!-- View controller files -->
         <script type="text/javascript" src="js/vc/common.js"></script>            
         <script type="text/javascript" src="js/vc/camera.js"></script>
@@ -287,6 +297,7 @@
         <script type="text/javascript" src="js/vc/connection.js"></script> 
         <script type="text/javascript" src="js/vc/geolocation.js"></script> 
         <script type="text/javascript" src="js/vc/globalization.js"></script>  
-        <script type="text/javascript" src="js/vc/device.js"></script>                                                                       
+        <script type="text/javascript" src="js/vc/device.js"></script>
+        <script type="text/javascript" src="js/vc/notification.js"></script>                                                                                   
     </body>
 </html>

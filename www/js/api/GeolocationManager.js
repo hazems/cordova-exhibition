@@ -5,16 +5,13 @@ var GeolocationManager = (function () {
  
   function createObject() {
       return {
-          startWatchPosition: function (watchCallback) {
-        	  watchID = navigator.geolocation.watchPosition(watchCallback.watchSuccess, 
-        			  								        watchCallback.watchError, 
-        			  								        {frequency: 2000});
-          },
-          stopWatchPosition: function () {    
-              if (watchID) {
-            	  navigator.geolocation.clearWatch(watchID);
-                  watchID = null;
-              }
+          getCurrentPosition: function (callback) {
+              watchID = navigator.geolocation.getCurrentPosition(callback.onSuccess, 
+                                                                 callback.onError, 
+                                                                 {
+                                                                     timeout: 15000, 
+                                                                     enableHighAccuracy: true 
+                                                                 });
           }
       };
   };

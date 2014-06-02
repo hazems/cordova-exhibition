@@ -14,7 +14,9 @@
                 "<feature name=\"Device\"><param name=\"android-package\" value=\"org.apache.cordova.device.Device\" /></feature>": 1,
                 "<feature name=\"Media\"><param name=\"android-package\" value=\"org.apache.cordova.media.AudioHandler\" /></feature>": 1,
                 "<feature name=\"Accelerometer\"><param name=\"android-package\" value=\"org.apache.cordova.devicemotion.AccelListener\" /></feature>": 1,
-                "<feature name=\"Globalization\"><param name=\"android-package\" value=\"org.apache.cordova.globalization.Globalization\" /></feature>": 1
+                "<feature name=\"Globalization\"><param name=\"android-package\" value=\"org.apache.cordova.globalization.Globalization\" /></feature>": 1,
+                "<feature name=\"Vibration\"><param name=\"android-package\" value=\"org.apache.cordova.vibration.Vibration\" /></feature>": 1,
+                "<feature name=\"Notification\"><param name=\"android-package\" value=\"org.apache.cordova.dialogs.Notification\" /></feature>": 1
             }
         },
         "AndroidManifest.xml": {
@@ -27,6 +29,9 @@
                 "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />": 1,
                 "<uses-permission android:name=\"android.permission.MODIFY_AUDIO_SETTINGS\" />": 1,
                 "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\" />": 1
+            },
+            "/manifest": {
+                "<uses-permission android:name=\"android.permission.VIBRATE\" />": 1
             }
         }
     },
@@ -56,6 +61,12 @@
             "PACKAGE_NAME": "com.jsmobile.cordovaexhibition"
         },
         "org.apache.cordova.globalization": {
+            "PACKAGE_NAME": "com.jsmobile.cordovaexhibition"
+        },
+        "org.apache.cordova.vibration": {
+            "PACKAGE_NAME": "com.jsmobile.cordovaexhibition"
+        },
+        "org.apache.cordova.dialogs": {
             "PACKAGE_NAME": "com.jsmobile.cordovaexhibition"
         }
     },

@@ -4,62 +4,26 @@
     $(document).on("pageinit", "#geolocation", function(e) {
         e.preventDefault();
         
-        $("#startWatchPosition").on("tap", function(e) {
+        $("#getCurrentPosition").on("tap", function(e) {
             e.preventDefault();
             
-            enableStartWatchPositionButton(false); 
+            var callback = {};
             
-            var watchCallback = {};
+            callback.onSuccess = onSuccess;
+            callback.onError = onError;
             
-            watchCallback.watchSuccess = handleWatchSuccess;
-            watchCallback.watchError = handleWatchError;
-            
-            geolocationManager.startWatchPosition(watchCallback);          
-        });       
-        
-        $("#stopWatchPosition").on("tap", function(e) {
-            e.preventDefault();
-
-            enableStartWatchPositionButton(true);
-            
-            geolocationManager.stopWatchPosition();         
+            geolocationManager.getCurrentPosition(callback);          
         });
-           
-        initPage();
     });
     
-    $(document).on("pagebeforehide", "#geolocation", function(e) {
+    function onSuccess(position) {
+        console.log("position is retrieved successfully");
         
-        //Make sure to stop heading watch before leaving the view. 
-    	geolocationManager.stopWatchPosition();
-    	enableStartWatchPositionButton(true);
-    });    
-    
-    function initPage() {
-        $("#stopWatchPosition").closest('.ui-btn').hide();     
+        $("#position").html("Latitude: "  + position.coords.latitude + "<br />" +
+                            "Longitude: " + position.coords.longitude);    
     }
     
-    function handleWatchSuccess(position) {
-        $("#position").html("Current Position: <br/>" + 
-                            "Latitude: "  + position.coords.latitude + "<br />" +
-                            "Longitude: " + position.coords.longitude + "<br />");    
-    }
-    
-    function handleWatchError(error) {
-        console.log("An error occurs during watching position: " + error.code);
-    }  
-    
-    function enableStartWatchPositionButton(enable) {
-        
-        if (enable) {
-            $("#startWatchPosition").button("enable");
-            $("#stopWatchPosition").closest('.ui-btn').hide(); 
-        } else {
-            $("#startWatchPosition").button("disable");
-            $("#stopWatchPosition").closest('.ui-btn').show(); 
-        }
-        
-        $("#startWatchPosition").button("refresh");
-    }
-    
+    function onError(error) {
+        console.log("code: " + error.code + ", message: " + error.message);
+    }     
 })();

@@ -5,10 +5,10 @@ var CompassManager = (function () {
  
   function createObject() {
       return {
-          startWatchHeading: function (watchCallback) {
-        	  watchID = navigator.compass.watchHeading(watchCallback.watchSuccess, 
-        			  								   watchCallback.watchError, 
-        			  								   {frequency: 2000});
+          startWatchHeading: function (callback) {
+              watchID = navigator.compass.watchHeading(callback.onSuccess, 
+                                                       callback.onError, 
+                                                       {frequency: 2000});
           },
           stopWatchHeading: function () {    
               if (watchID) {

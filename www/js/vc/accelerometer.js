@@ -9,12 +9,12 @@
             
             enableStartWatchAccelerationButton(false); 
             
-            var watchCallback = {};
+            var callback = {};
             
-            watchCallback.watchSuccess = handleWatchSuccess;
-            watchCallback.watchError = handleWatchError;
+            callback.onSuccess = onSuccess;
+            callback.onError = onError;
             
-            accelerometerManager.startWatchAcceleration(watchCallback);          
+            accelerometerManager.startWatchAcceleration(callback);          
         });       
         
         $("#stopWatchAcceleration").on("tap", function(e) {
@@ -29,37 +29,37 @@
     });
     
     $(document).on("pagebeforehide", "#accelerometer", function(e) {
-    	
-    	//Make sure to stop heading watch before leaving the view. 
-    	accelerometerManager.stopWatchAcceleration();
-    	enableStartWatchAccelerationButton(true);
+        
+        //Make sure to stop heading watch before leaving the view. 
+        accelerometerManager.stopWatchAcceleration();
+        enableStartWatchAccelerationButton(true);
     });    
     
     function initPage() {
-        $("#stopWatchAcceleration").closest('.ui-btn').hide(); 	
+        $("#stopWatchAcceleration").closest('.ui-btn').hide();     
     }
     
-    function handleWatchSuccess(acceleration) {
+    function onSuccess(acceleration) {
         $("#acceleration").html("Acceleration X: " + acceleration.x + "<br/>" +
           "Acceleration Y: " + acceleration.y + "<br/>" +
           "Acceleration Z: " + acceleration.z + "<br/>" +
           "Timestamp: "      + acceleration.timestamp + "<br/>");    
     }
     
-    function handleWatchError() {
-    	console.log("An error occurs during watching acceleration.");
+    function onError() {
+        console.log("An error occurs during watching acceleration.");
     }  
     
     function enableStartWatchAccelerationButton(enable) {
-    	if (enable) {
-    		$("#startWatchAcceleration").button("enable");
+        if (enable) {
+            $("#startWatchAcceleration").button("enable");
             $("#stopWatchAcceleration").closest('.ui-btn').hide(); 
-    	} else {
-    		$("#startWatchAcceleration").button("disable");
+        } else {
+            $("#startWatchAcceleration").button("disable");
             $("#stopWatchAcceleration").closest('.ui-btn').show(); 
-    	}
-    	
-		$("#startWatchAcceleration").button("refresh");
+        }
+        
+        $("#startWatchAcceleration").button("refresh");
     }
     
 })();
