@@ -127,8 +127,28 @@
                <a href="#" data-role="button" data-rel="back" data-icon="back">Back</a> 
             </div>
             <div data-role="content">
-                <p>Iam the "storage"</p>
-            </div>           
+               <h1>Welcome to the Storage Gallery</h1>
+               <p>Persist your information using Cordova Web Storage API.</p>
+               <div data-role="fieldcontain">
+                   <label for="userName">Name</label> 
+                   <input type="text" id="userName"></input>
+                   
+                   <br/>
+                        
+                   <label for="address">Address</label> 
+                   <input type="text" id="address"></input>
+                   
+                   <br/><br/>
+
+                   <div class="center-wrapper">
+	                   <input type="button" id="saveInfo" data-icon="action" value="Save" data-inline="true"/>
+	                   <input type="button" id="reloadInfo" data-icon="refresh" value="Reload" data-inline="true"/>   
+                   </div>  
+                   
+                   <div id="storageResult">
+                   </div>                                           
+                </div>
+            </div>  
         </div>         
         
         <div data-role="page" id="contacts">
@@ -287,7 +307,8 @@
         <script type="text/javascript" src="js/api/GlobalizationManager.js"></script>
         <script type="text/javascript" src="js/api/DeviceManager.js"></script>
         <script type="text/javascript" src="js/api/NotificationManager.js"></script>
-                                
+        <script type="text/javascript" src="js/api/StorageManager.js"></script>
+                                        
         <!-- View controller files -->
         <script type="text/javascript" src="js/vc/common.js"></script>            
         <script type="text/javascript" src="js/vc/camera.js"></script>
@@ -298,6 +319,7 @@
         <script type="text/javascript" src="js/vc/geolocation.js"></script> 
         <script type="text/javascript" src="js/vc/globalization.js"></script>  
         <script type="text/javascript" src="js/vc/device.js"></script>
-        <script type="text/javascript" src="js/vc/notification.js"></script>                                                                                   
+        <script type="text/javascript" src="js/vc/notification.js"></script>  
+        <script type="text/javascript" src="js/vc/storage.js"></script>                                                                                           
     </body>
 </html>
