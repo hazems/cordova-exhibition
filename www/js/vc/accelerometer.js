@@ -1,5 +1,6 @@
 (function() {
     var accelerometerManager = AccelerometerManager.getInstance();
+    var watchID;
     
     $(document).on("pageinit", "#accelerometer", function(e) {
         e.preventDefault();
@@ -14,7 +15,7 @@
             callback.onSuccess = onSuccess;
             callback.onError = onError;
             
-            accelerometerManager.startWatchAcceleration(callback);          
+            watchID = accelerometerManager.startWatchAcceleration(callback);          
         });       
         
         $("#stopWatchAcceleration").on("tap", function(e) {
@@ -22,7 +23,7 @@
 
             enableStartWatchAccelerationButton(true);
             
-            accelerometerManager.stopWatchAcceleration();         
+            accelerometerManager.stopWatchAcceleration(watchID);         
         });
            
         initPage();

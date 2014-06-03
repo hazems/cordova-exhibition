@@ -157,9 +157,20 @@
                <a href="#" data-role="button" data-rel="back" data-icon="back">Back</a> 
             </div>
             <div data-role="content">
-                <p>Iam the "contacts"</p>
+                <ul data-role="listview" id="contactList" data-filter="true" data-filter-placeholder="Enter 3+ chars to search ...">
+                </ul>
             </div>           
-        </div>          
+        </div>
+        
+        <div data-role="page" id="contactDetails">
+            <div data-role="header">                               
+               <h1>Contact Details</h1>                                  
+               <a href="#" data-role="button" data-rel="back" data-icon="back">Back</a> 
+            </div>
+            <div data-role="content">
+                <div id="contactInfo"></div>
+            </div>           
+        </div>                  
         
         <div data-role="page" id="device">
             <div data-role="header">                               
@@ -296,8 +307,7 @@
         <script type="text/javascript" src="cordova.js"></script>
         
         <!-- API JS files -->
-        <script type="text/javascript" src="js/api/FileManager.js"></script>      
-        <script type="text/javascript" src="js/api/MemoManager.js"></script> 
+        <script type="text/javascript" src="js/api/FileManager.js"></script>  
         <script type="text/javascript" src="js/api/CameraManager.js"></script> 
         <script type="text/javascript" src="js/api/MediaManager.js"></script> 
         <script type="text/javascript" src="js/api/CompassManager.js"></script>        
@@ -308,7 +318,8 @@
         <script type="text/javascript" src="js/api/DeviceManager.js"></script>
         <script type="text/javascript" src="js/api/NotificationManager.js"></script>
         <script type="text/javascript" src="js/api/StorageManager.js"></script>
-                                        
+        <script type="text/javascript" src="js/api/ContactsManager.js"></script> 
+                                                
         <!-- View controller files -->
         <script type="text/javascript" src="js/vc/common.js"></script>            
         <script type="text/javascript" src="js/vc/camera.js"></script>
@@ -320,6 +331,8 @@
         <script type="text/javascript" src="js/vc/globalization.js"></script>  
         <script type="text/javascript" src="js/vc/device.js"></script>
         <script type="text/javascript" src="js/vc/notification.js"></script>  
-        <script type="text/javascript" src="js/vc/storage.js"></script>                                                                                           
+        <script type="text/javascript" src="js/vc/storage.js"></script>   
+        <script type="text/javascript" src="js/vc/contacts.js"></script> 
+        <script type="text/javascript" src="js/vc/contactDetails.js"></script>                                                                                                          
     </body>
 </html>

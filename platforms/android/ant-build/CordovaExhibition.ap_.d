@@ -239,12 +239,12 @@
 /Users/ibm/Desktop/Desktop1/Packt.Cordova/Projects/cordova-exhibition/platforms/android/assets/www/js/api/CameraManager.js \
 /Users/ibm/Desktop/Desktop1/Packt.Cordova/Projects/cordova-exhibition/platforms/android/assets/www/js/api/CompassManager.js \
 /Users/ibm/Desktop/Desktop1/Packt.Cordova/Projects/cordova-exhibition/platforms/android/assets/www/js/api/ConnectionManager.js \
+/Users/ibm/Desktop/Desktop1/Packt.Cordova/Projects/cordova-exhibition/platforms/android/assets/www/js/api/ContactsManager.js \
 /Users/ibm/Desktop/Desktop1/Packt.Cordova/Projects/cordova-exhibition/platforms/android/assets/www/js/api/DeviceManager.js \
 /Users/ibm/Desktop/Desktop1/Packt.Cordova/Projects/cordova-exhibition/platforms/android/assets/www/js/api/FileManager.js \
 /Users/ibm/Desktop/Desktop1/Packt.Cordova/Projects/cordova-exhibition/platforms/android/assets/www/js/api/GeolocationManager.js \
 /Users/ibm/Desktop/Desktop1/Packt.Cordova/Projects/cordova-exhibition/platforms/android/assets/www/js/api/GlobalizationManager.js \
 /Users/ibm/Desktop/Desktop1/Packt.Cordova/Projects/cordova-exhibition/platforms/android/assets/www/js/api/MediaManager.js \
-/Users/ibm/Desktop/Desktop1/Packt.Cordova/Projects/cordova-exhibition/platforms/android/assets/www/js/api/MemoManager.js \
 /Users/ibm/Desktop/Desktop1/Packt.Cordova/Projects/cordova-exhibition/platforms/android/assets/www/js/api/NotificationManager.js \
 /Users/ibm/Desktop/Desktop1/Packt.Cordova/Projects/cordova-exhibition/platforms/android/assets/www/js/api/StorageManager.js \
 /Users/ibm/Desktop/Desktop1/Packt.Cordova/Projects/cordova-exhibition/platforms/android/assets/www/js/vc/accelerometer.js \
@@ -252,6 +252,8 @@
 /Users/ibm/Desktop/Desktop1/Packt.Cordova/Projects/cordova-exhibition/platforms/android/assets/www/js/vc/common.js \
 /Users/ibm/Desktop/Desktop1/Packt.Cordova/Projects/cordova-exhibition/platforms/android/assets/www/js/vc/compass.js \
 /Users/ibm/Desktop/Desktop1/Packt.Cordova/Projects/cordova-exhibition/platforms/android/assets/www/js/vc/connection.js \
+/Users/ibm/Desktop/Desktop1/Packt.Cordova/Projects/cordova-exhibition/platforms/android/assets/www/js/vc/contactDetails.js \
+/Users/ibm/Desktop/Desktop1/Packt.Cordova/Projects/cordova-exhibition/platforms/android/assets/www/js/vc/contacts.js \
 /Users/ibm/Desktop/Desktop1/Packt.Cordova/Projects/cordova-exhibition/platforms/android/assets/www/js/vc/device.js \
 /Users/ibm/Desktop/Desktop1/Packt.Cordova/Projects/cordova-exhibition/platforms/android/assets/www/js/vc/geolocation.js \
 /Users/ibm/Desktop/Desktop1/Packt.Cordova/Projects/cordova-exhibition/platforms/android/assets/www/js/vc/globalization.js \

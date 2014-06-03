@@ -42,8 +42,12 @@ var MediaManager = (function () {
                  }
             },
             stopRecording : function (callback) {
-                recordingMedia.stopRecord();   
-                recordingMedia.release();   
+            	if (recordingMedia) {
+            		recordingMedia.stopRecord();   
+                	recordingMedia.release();
+                	
+                	recordingMedia = null;
+            	}
             },
             playVoice : function (filePath, callback) {
                 if (filePath) {                  
@@ -56,8 +60,7 @@ var MediaManager = (function () {
                 }            
             },  
             recordVoiceExternally: function (callback) {
-                
-                var onSuccess = function(mediaFiles) {
+                var onSuccess = function (mediaFiles) {
                     if (mediaFiles && mediaFiles[0]) {        
                         var currentFilePath = mediaFiles[0].fullPath;
                         
