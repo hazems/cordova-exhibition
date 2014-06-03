@@ -1,5 +1,6 @@
 (function() {
     var compassManager = CompassManager.getInstance();
+    var watchID;
     
     $(document).on("pageinit", "#compass", function(e) {
         e.preventDefault();
@@ -14,7 +15,7 @@
             callback.onSuccess = onSuccess;
             callback.onError = onError;
             
-            compassManager.startWatchHeading(callback);          
+            watchID = compassManager.startWatchHeading(callback);          
         });       
         
         $("#stopWatchHeading").on("tap", function(e) {
@@ -22,7 +23,7 @@
 
             enableStartWatchHeadingButton(true);
             
-            compassManager.stopWatchHeading();         
+            compassManager.stopWatchHeading(watchID);         
         });
            
         initPage();
