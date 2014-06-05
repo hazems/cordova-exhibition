@@ -18,7 +18,8 @@
                 "<feature name=\"Vibration\"><param name=\"android-package\" value=\"org.apache.cordova.vibration.Vibration\" /></feature>": 1,
                 "<feature name=\"Notification\"><param name=\"android-package\" value=\"org.apache.cordova.dialogs.Notification\" /></feature>": 1,
                 "<feature name=\"Contacts\"><param name=\"android-package\" value=\"org.apache.cordova.contacts.ContactManager\" /></feature>": 1,
-                "<feature name=\"Battery\"><param name=\"android-package\" value=\"org.apache.cordova.batterystatus.BatteryListener\" /></feature>": 1
+                "<feature name=\"Battery\"><param name=\"android-package\" value=\"org.apache.cordova.batterystatus.BatteryListener\" /></feature>": 1,
+                "<feature name=\"InAppBrowser\"><param name=\"android-package\" value=\"org.apache.cordova.inappbrowser.InAppBrowser\" /></feature>": 1
             }
         },
         "AndroidManifest.xml": {
@@ -78,6 +79,9 @@
             "PACKAGE_NAME": "com.jsmobile.cordovaexhibition"
         },
         "org.apache.cordova.battery-status": {
+            "PACKAGE_NAME": "com.jsmobile.cordovaexhibition"
+        },
+        "org.apache.cordova.inappbrowser": {
             "PACKAGE_NAME": "com.jsmobile.cordovaexhibition"
         }
     },

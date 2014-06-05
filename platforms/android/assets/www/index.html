@@ -34,43 +34,61 @@
         <title>Cordova Exhibition</title>
     </head>
     <body>        
-         <div data-role="page" id="features">
-             <div data-role="header">            
-                <h1>Main Features</h1>                 
-             </div>
-             <div data-role="content">
-                 <ul data-role="listview" id="memoListView">
-                     <li><a href="#accelerometer">Accelerometer</a></li>
-                     <li><a href="#camera">Camera</a></li>
-                     <li><a href="#compass">Compass</a></li>
-                     <li><a href="#connection">Connection</a></li>                                                               
-                     <li><a href="#contacts">Contacts</a></li>
-                     <li><a href="#device">Device</a></li>
-                     <li><a href="#events">Events</a></li>
-                     <li><a href="#geolocation">Geolocation</a></li>  
-                     <li><a href="#globalization">Globalization</a></li>
-                     <li><a href="#inAppBrowser">InAppBrowser</a></li>
-                     <li><a href="#media">Media / File / Capture</a></li>
-                     <li><a href="#notification">Notification</a></li>
-                     <li><a href="#storage">Storage</a></li>
-                 </ul>                  
-             </div>
-             <div data-role="footer" data-position="fixed">
-                <h1>Powered by Apache Cordova</h1>
-             </div>                
-         </div>
+        <div data-role="page" id="features">
+            <div data-role="header">            
+               <h1>Features</h1>                 
+            </div>
+            <div data-role="content">
+                <ul data-role="listview" id="memoListView">
+                    <li><a href="#accelerometer">Accelerometer</a></li>
+                    <li><a href="#camera">Camera</a></li>
+                    <li><a href="#compass">Compass</a></li>
+                    <li><a href="#connection">Connection</a></li>                                                               
+                    <li><a href="#contacts">Contacts</a></li>
+                    <li><a href="#device">Device</a></li>
+                    <li><a href="#geolocation">Geolocation</a></li>  
+                    <li><a href="#globalization">Globalization</a></li>
+                    <li><a href="#inAppBrowser">InAppBrowser</a></li>
+                    <li><a href="#media">Media / File / Capture</a></li>
+                    <li><a href="#notification">Notification</a></li>
+                    <li><a href="#storage">Storage</a></li>
+                </ul>                  
+            </div>
+            <div data-role="footer" data-position="fixed">
+               <h1>Powered by Apache Cordova</h1>
+            </div>                
+        </div>
+         
+        <div data-role="page" id="accelerometer">
+            <div data-role="header">                               
+                <h1>Accelerometer</h1>                                  
+                <a href="#" data-role="button" data-rel="back" data-icon="back">Back</a> 
+            </div>
+            <div data-role="content">
+                <h1>Welcome to the Accelerometer Gallery</h1>
+                <p>Click 'Start Watch Acceleration' button below to start watch acceleration.</p>
+                <div data-role="fieldcontain">
+                    <div class="center-wrapper">
+                        <input type="button" id="startWatchAcceleration" value="Start Watch Acceleration"/>
+                        <input type="button" id="stopWatchAcceleration" value="Stop Watch Acceleration"/><br/>
+                    </div>  
+                    <div id="acceleration">
+                    </div>                                                                
+                </div>
+            </div>             
+        </div>         
         
         <div data-role="page" id="camera">
-           <div data-role="header">                               
-               <h1>Camera</h1>                                  
-               <a href="#" data-role="button" data-rel="back" data-icon="back">Back</a> 
+            <div data-role="header">                               
+                <h1>Camera</h1>                                  
+                <a href="#" data-role="button" data-rel="back" data-icon="back">Back</a> 
             </div>
             <div data-role="content">
                 <h1>Welcome to the Camera Gallery</h1>
                 <p>Click 'Get Picture' button below</p>
                 <div class="center-wrapper">
                     <input type="button" id="getPicture" data-icon="camera" value="Get Picture" 
-                           class="center-button" data-inline="true"/>
+                          class="center-button" data-inline="true"/>
                 </div>
                 <br/>
                  
@@ -86,75 +104,45 @@
                     </ul>
                 </div>
             </div>
-        </div>        
-        
-        <div data-role="page" id="media">
+        </div>    
+         
+        <div data-role="page" id="compass">
             <div data-role="header">                               
-               <h1>Media / Capture</h1>                                  
-               <a href="#" data-role="button" data-rel="back" data-icon="back">Back</a> 
+                <h1>Compass</h1>                                  
+                <a href="#" data-role="button" data-rel="back" data-icon="back">Back</a> 
             </div>
             <div data-role="content">
-               <h1>Welcome to the Media / Capture Gallery</h1>
-               <p>Click 'Record Sound' or 'Record Sound Externally' button below to start recording your voice.</p>
-               <div data-role="fieldcontain">
-                   <input type="hidden" id="location"/> 
-                   <div class="center-wrapper">
-                       <input type="button" id="recordSound" data-icon="audio" value="Record Sound"/>
-                       <input type="button" id="recordSoundExt" data-icon="audio" value="Record Sound Externally"/>
-                       <input type="button" id="playSound" data-icon="refresh" value="Playback"/><br/>
-                   </div>  
+                <h1>Welcome to the Compass Gallery</h1>
+                <p>Click 'Start Watch Heading' button below to start watch heading using your device's compass.</p>
+                <div data-role="fieldcontain">
+                    <input type="button" id="startWatchHeading" value="Start Watch Heading"/>
+                    <input type="button" id="stopWatchHeading" value="Stop Watch Heading"/><br/>
                        
-                   <div data-role="popup" id="recordSoundDialog" data-dismissible="false" style="width:250px">
-                       <div data-role="header">
-                           <h1>Recording</h1>
-                       </div>
-                    
-                       <div data-role="content">
-                           <div class="center-wrapper">
-                               <div id="soundDuration"></div>
-                               <input type="button" id="stopRecordingSound" value="Stop Recording" 
-                                      class="center-button" data-inline="true"/>
-                           </div>
-                       </div>
+                    <div id="compassHeading">
                     </div>                                                                
-                 </div>
-            </div>                 
-        </div>               
+                </div>
+            </div>        
+        </div>              
         
-        <div data-role="page" id="storage">
+        <div data-role="page" id="connection">
             <div data-role="header">                               
-               <h1>Storage</h1>                                  
-               <a href="#" data-role="button" data-rel="back" data-icon="back">Back</a> 
+                <h1>Connection</h1>                                  
+                <a href="#" data-role="button" data-rel="back" data-icon="back">Back</a> 
             </div>
             <div data-role="content">
-               <h1>Welcome to the Storage Gallery</h1>
-               <p>Persist your information using Cordova Web Storage API.</p>
-               <div data-role="fieldcontain">
-                   <label for="userName">Name</label> 
-                   <input type="text" id="userName"></input>
+                <h1>Welcome to the Connection Gallery</h1>
+                <p>Click 'Get Connection Type' button below to know the connection type.</p>
+                <input type="button" id="getConnectionType" value="Get Connection Type"/><br/>
                    
-                   <br/>
-                        
-                   <label for="address">Address</label> 
-                   <input type="text" id="address"></input>
-                   
-                   <br/><br/>
-
-                   <div class="center-wrapper">
-	                   <input type="button" id="saveInfo" data-icon="action" value="Save" data-inline="true"/>
-	                   <input type="button" id="reloadInfo" data-icon="refresh" value="Reload" data-inline="true"/>   
-                   </div>  
-                   
-                   <div id="storageResult">
-                   </div>                                           
-                </div>
-            </div>  
-        </div>         
-        
+                <div id="connectionType">
+                </div> 
+            </div>        
+        </div>           
+         
         <div data-role="page" id="contacts">
             <div data-role="header">                               
-               <h1>Contacts</h1>                                  
-               <a href="#" data-role="button" data-rel="back" data-icon="back">Back</a> 
+                <h1>Contacts</h1>                                  
+                <a href="#" data-role="button" data-rel="back" data-icon="back">Back</a> 
             </div>
             <div data-role="content">
                 <ul data-role="listview" id="contactList" data-filter="true" data-filter-placeholder="Enter 3+ chars to search ...">
@@ -164,175 +152,188 @@
         
         <div data-role="page" id="contactDetails">
             <div data-role="header">                               
-               <h1>Contact Details</h1>                                  
-               <a href="#" data-role="button" data-rel="back" data-icon="back">Back</a> 
+                <h1>Contact Details</h1>                                  
+                <a href="#" data-role="button" data-rel="back" data-icon="back">Back</a> 
             </div>
             <div data-role="content">
                 <div id="contactInfo"></div>
             </div>           
-        </div>                  
-        
+        </div>            
+         
         <div data-role="page" id="device">
             <div data-role="header">                               
-               <h1>Device</h1>                                  
-               <a href="#" data-role="button" data-rel="back" data-icon="back">Back</a> 
+                <h1>Device</h1>                                  
+                <a href="#" data-role="button" data-rel="back" data-icon="back">Back</a> 
             </div>
             <div data-role="content">
-               <h1>Welcome to the Device Gallery</h1>
-               <p>Click 'Get Device Info' button below to get the device information.</p>
-               <input type="button" id="getDeviceInfo" value="Get Device Info"/><br/>
+                <h1>Welcome to the Device Gallery</h1>
+                <p>Click 'Get Device Info' button below to get the device information.</p>
+                <input type="button" id="getDeviceInfo" value="Get Device Info"/><br/>
                    
-               <div id="deviceInfo">
+                <div id="deviceInfo">
                 </div>
             </div>        
-        </div>                 
-        
-        <div data-role="page" id="events">
-            <div data-role="header">                               
-               <h1>Events</h1>                                  
-               <a href="#" data-role="button" data-rel="back" data-icon="back">Back</a> 
-            </div>
-            <div data-role="content">
-               <h1>Welcome to the Events Gallery</h1>
-               <p>Click 'Get Device Info' button below to get the device information.</p>
-               ...
-            </div>        
         </div>        
-        
-        <div data-role="page" id="connection">
-            <div data-role="header">                               
-               <h1>Connection</h1>                                  
-               <a href="#" data-role="button" data-rel="back" data-icon="back">Back</a> 
-            </div>
-            <div data-role="content">
-               <h1>Welcome to the Connection Gallery</h1>
-               <p>Click 'Get Connection Type' button below to know the connection type.</p>
-               <input type="button" id="getConnectionType" value="Get Connection Type"/><br/>
-                   
-               <div id="connectionType">
-               </div> 
-            </div>        
-        </div>             
-        
+         
         <div data-role="page" id="geolocation">
             <div data-role="header">                               
-               <h1>Geolocation</h1>                                  
-               <a href="#" data-role="button" data-rel="back" data-icon="back">Back</a> 
+                <h1>Geolocation</h1>                                  
+                <a href="#" data-role="button" data-rel="back" data-icon="back">Back</a> 
             </div>
             <div data-role="content">
-               <h1>Welcome to the Geolocation Gallery</h1>
-               <p>Click 'Get Current Position' button below to know where you are.</p>
-               <input type="button" id="getCurrentPosition" value="Get Current Position"/><br/>                  
+                <h1>Welcome to the Geolocation Gallery</h1>
+                <p>Click 'Get Current Position' button below to know where you are.</p>
+                <input type="button" id="getCurrentPosition" value="Get Current Position"/><br/>                  
                
-               <div id="position">
-               </div> 
+                <div id="position">
+                </div> 
             </div>        
         </div>      
         
         <div data-role="page" id="globalization">
             <div data-role="header">                               
-               <h1>Connection</h1>                                  
-               <a href="#" data-role="button" data-rel="back" data-icon="back">Back</a> 
+                <h1>Globalization</h1>                                  
+                <a href="#" data-role="button" data-rel="back" data-icon="back">Back</a> 
             </div>
             <div data-role="content">
-               <h1>Welcome to the Globalization Gallery</h1>
-               <p>Click the buttons below to explore globalization.</p>
-               <input type="button" id="getLocaleName" value="Get Locale Name"/>
-               <input type="button" id="getPreferredLanguage" value="Get Preferred Language"/><br/>
+                <h1>Welcome to the Globalization Gallery</h1>
+                <p>Click the buttons below to explore globalization.</p>
+                <input type="button" id="getLocaleName" value="Get Locale Name"/>
+                <input type="button" id="getPreferredLanguage" value="Get Preferred Language"/><br/>
                                       
-               <div id="globInfo">
-               </div>                                                                
+                <div id="globInfo">
+                </div>                                                                
             </div>        
-        </div>        
-        
-        <div data-role="page" id="accelerometer">
-            <div data-role="header">                               
-               <h1>Accelerometer</h1>                                  
-               <a href="#" data-role="button" data-rel="back" data-icon="back">Back</a> 
-            </div>
-            <div data-role="content">
-               <h1>Welcome to the Accelerometer Gallery</h1>
-               <p>Click 'Start Watch Acceleration' button below to start watch acceleration.</p>
-               <div data-role="fieldcontain">
-                   <div class="center-wrapper">
-                       <input type="button" id="startWatchAcceleration" value="Start Watch Acceleration"/>
-                       <input type="button" id="stopWatchAcceleration" value="Stop Watch Acceleration"/><br/>
-                   </div>  
-                       
-                   <div id="acceleration">
-                    </div>                                                                
-                 </div>
-            </div>             
         </div>
-        
-        <div data-role="page" id="compass">
+         
+        <div data-role="page" id="inAppBrowser">
             <div data-role="header">                               
-               <h1>Compass</h1>                                  
-               <a href="#" data-role="button" data-rel="back" data-icon="back">Back</a> 
+                <h1>InAppBrowser</h1>                                  
+                <a href="#" data-role="button" data-rel="back" data-icon="back">Back</a> 
             </div>
             <div data-role="content">
-               <h1>Welcome to the Compass Gallery</h1>
-               <p>Click 'Start Watch Heading' button below to start watch heading using your device's compass.</p>
-               <div data-role="fieldcontain">
-                   <input type="button" id="startWatchHeading" value="Start Watch Heading"/>
-                   <input type="button" id="stopWatchHeading" value="Stop Watch Heading"/><br/>
+                <h1>Welcome to the InAppBrowser Gallery</h1>
+                <p>Click the button below to open the inAppBrowser which will close after 10 seconds.</p>
+                
+                <input type="button" id="openGoogleSearchPage" value="Open and Close Google Search page"/>
+            </div>           
+        </div>          
+        
+        <div data-role="page" id="media">
+            <div data-role="header">                               
+                <h1>Media / Capture</h1>                                  
+                <a href="#" data-role="button" data-rel="back" data-icon="back">Back</a> 
+            </div>
+            <div data-role="content">
+                <h1>Welcome to the Media / Capture Gallery</h1>
+                <p>Click 'Record Sound' or 'Record Sound Externally' button below to start recording your voice.</p>
+                <div data-role="fieldcontain">
+                    <input type="hidden" id="location"/> 
+                    <div class="center-wrapper">
+                        <input type="button" id="recordSound" data-icon="audio" value="Record Sound"/>
+                        <input type="button" id="recordSoundExt" data-icon="audio" value="Record Sound Externally"/>
+                        <input type="button" id="playSound" data-icon="refresh" value="Playback"/><br/>
+                    </div>  
                        
-                   <div id="compassHeading">
-                   </div>                                                                
-                </div>
-            </div>        
-        </div> 
+                     <div data-role="popup" id="recordSoundDialog" data-dismissible="false" style="width:250px">
+                         <div data-role="header">
+                             <h1>Recording</h1>
+                         </div>
+                    
+                         <div data-role="content">
+                             <div class="center-wrapper">
+                                 <div id="soundDuration"></div>
+                                 <input type="button" id="stopRecordingSound" value="Stop Recording" 
+                                        class="center-button" data-inline="true"/>
+                             </div>
+                         </div>
+                      </div>                                                                
+                  </div>
+            </div>                 
+        </div>               
         
         <div data-role="page" id="notification">
             <div data-role="header">                               
-               <h1>Notification</h1>                                  
-               <a href="#" data-role="button" data-rel="back" data-icon="back">Back</a> 
+                <h1>Notification</h1>                                  
+                <a href="#" data-role="button" data-rel="back" data-icon="back">Back</a> 
             </div>
             <div data-role="content">
-               <h1>Welcome to the Notification Gallery</h1>
-               <p>Click the buttons below to check notifications.</p>
-               <div data-role="fieldcontain">
-                   <input type="button" id="showAlert" value="Show Alert"/>
-                   <input type="button" id="showConfirm" value="Show Confirm"/>
-                   <input type="button" id="showPrompt" value="Show Prompt"/>
-                   <input type="button" id="vibrate" value="Vibrate"/>
-                   <input type="button" id="beep" value="Beep"/>
+                <h1>Welcome to the Notification Gallery</h1>
+                <p>Click the buttons below to check notifications.</p>
+                <div data-role="fieldcontain">
+                    <input type="button" id="showAlert" value="Show Alert"/>
+                    <input type="button" id="showConfirm" value="Show Confirm"/>
+                    <input type="button" id="showPrompt" value="Show Prompt"/>
+                    <input type="button" id="vibrate" value="Vibrate"/>
+                    <input type="button" id="beep" value="Beep"/>
                                                                                 
-                   <div id="notificationResult">
-                   </div>                                                                
+                    <div id="notificationResult">
+                    </div>                                                                
                 </div>
             </div>             
         </div>         
+        
+        <div data-role="page" id="storage">
+            <div data-role="header">                               
+                <h1>Storage</h1>                                  
+                <a href="#" data-role="button" data-rel="back" data-icon="back">Back</a> 
+            </div>
+            <div data-role="content">
+                <h1>Welcome to the Storage Gallery</h1>
+                <p>Persist your information using Cordova Web Storage API.</p>
+                <div data-role="fieldcontain">
+                    <label for="userName">Name</label> 
+                    <input type="text" id="userName"></input>
+                   
+                    <br/>
                         
+                    <label for="address">Address</label> 
+                    <input type="text" id="address"></input>
+                   
+                    <br/><br/>
+
+                    <div class="center-wrapper">
+                        <input type="button" id="saveInfo" data-icon="action" value="Save" data-inline="true"/>
+                        <input type="button" id="reloadInfo" data-icon="refresh" value="Reload" data-inline="true"/>   
+                    </div>  
+                   
+                    <div id="storageResult">
+                    </div>                                           
+                </div>
+            </div>  
+        </div>         
+                                
         <script type="text/javascript" src="cordova.js"></script>
         
         <!-- API JS files -->
+        <script type="text/javascript" src="js/api/AccelerometerManager.js"></script>        
         <script type="text/javascript" src="js/api/FileManager.js"></script>  
         <script type="text/javascript" src="js/api/CameraManager.js"></script> 
-        <script type="text/javascript" src="js/api/MediaManager.js"></script> 
-        <script type="text/javascript" src="js/api/CompassManager.js"></script>        
-        <script type="text/javascript" src="js/api/AccelerometerManager.js"></script>
+        <script type="text/javascript" src="js/api/CompassManager.js"></script>  
         <script type="text/javascript" src="js/api/ConnectionManager.js"></script>
+        <script type="text/javascript" src="js/api/ContactsManager.js"></script> 
+         <script type="text/javascript" src="js/api/DeviceManager.js"></script>
         <script type="text/javascript" src="js/api/GeolocationManager.js"></script>
-        <script type="text/javascript" src="js/api/GlobalizationManager.js"></script>
-        <script type="text/javascript" src="js/api/DeviceManager.js"></script>
+        <script type="text/javascript" src="js/api/GlobalizationManager.js"></script>         
+        <script type="text/javascript" src="js/api/InAppBrowserManager.js"></script>  
+        <script type="text/javascript" src="js/api/MediaManager.js"></script>
         <script type="text/javascript" src="js/api/NotificationManager.js"></script>
         <script type="text/javascript" src="js/api/StorageManager.js"></script>
-        <script type="text/javascript" src="js/api/ContactsManager.js"></script> 
-                                                
+                         
         <!-- View controller files -->
-        <script type="text/javascript" src="js/vc/common.js"></script>            
+        <script type="text/javascript" src="js/vc/common.js"></script>        
+        <script type="text/javascript" src="js/vc/accelerometer.js"></script>                      
         <script type="text/javascript" src="js/vc/camera.js"></script>
-        <script type="text/javascript" src="js/vc/media.js"></script>   
-        <script type="text/javascript" src="js/vc/compass.js"></script> 
-        <script type="text/javascript" src="js/vc/accelerometer.js"></script>   
-        <script type="text/javascript" src="js/vc/connection.js"></script> 
-        <script type="text/javascript" src="js/vc/geolocation.js"></script> 
-        <script type="text/javascript" src="js/vc/globalization.js"></script>  
-        <script type="text/javascript" src="js/vc/device.js"></script>
-        <script type="text/javascript" src="js/vc/notification.js"></script>  
-        <script type="text/javascript" src="js/vc/storage.js"></script>   
+        <script type="text/javascript" src="js/vc/compass.js"></script>  
+        <script type="text/javascript" src="js/vc/connection.js"></script>
         <script type="text/javascript" src="js/vc/contacts.js"></script> 
-        <script type="text/javascript" src="js/vc/contactDetails.js"></script>                                                                                                          
+        <script type="text/javascript" src="js/vc/contactDetails.js"></script>           
+        <script type="text/javascript" src="js/vc/device.js"></script>
+        <script type="text/javascript" src="js/vc/geolocation.js"></script> 
+        <script type="text/javascript" src="js/vc/globalization.js"></script> 
+        <script type="text/javascript" src="js/vc/inAppBrowser.js"></script> 
+        <script type="text/javascript" src="js/vc/media.js"></script>   
+        <script type="text/javascript" src="js/vc/notification.js"></script>  
+        <script type="text/javascript" src="js/vc/storage.js"></script>                                                                                               
     </body>
 </html>

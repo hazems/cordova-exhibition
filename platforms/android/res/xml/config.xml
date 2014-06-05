@@ -44,6 +44,9 @@
     <feature name="Battery">
         <param name="android-package" value="org.apache.cordova.batterystatus.BatteryListener" />
     </feature>
+    <feature name="InAppBrowser">
+        <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
+    </feature>
     <name>CordovaExhibition</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
