@@ -12,3 +12,7 @@ a {
 .center-button {
 	margin: 0 auto;
 }
+
+.ui-header .ui-title {
+	overflow: visible !important;
+}

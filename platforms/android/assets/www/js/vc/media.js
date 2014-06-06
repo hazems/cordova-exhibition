@@ -30,6 +30,11 @@
         
         $("#recordSoundExt").on("tap", function(e) {
             e.preventDefault();
+
+			if (device.platform.indexOf("Win") == 0) {
+				alert("This feature is not working properly in Windows platform by Cordova " + device.cordova);
+				return;			
+			}
             
             disableActionButtons();
             

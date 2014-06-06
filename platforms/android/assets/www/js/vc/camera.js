@@ -3,6 +3,8 @@
     
     $(document).on("pageinit", "#camera", function(e) {
         e.preventDefault();
+
+		$("#imageView").hide();  
                
         $("#getPicture").on("tap", function(e) {
             e.preventDefault();

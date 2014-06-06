@@ -7,9 +7,13 @@
         var i;
         var numbers = "";
 
-        for (i = 0; i < contactDetails.phoneNumbers.length; ++i) {
-            numbers = "<a href='tel:" + contactDetails.phoneNumbers[i].value + "'>" + 
-                      contactDetails.phoneNumbers[i].value + "</a><br/>";
+        if (contactDetails.phoneNumbers) {
+            for (i = 0; i < contactDetails.phoneNumbers.length; ++i) {
+                numbers = "<a href='tel:" + contactDetails.phoneNumbers[i].value + "'>" +
+                          contactDetails.phoneNumbers[i].value + "</a><br/>";
+            }
+        } else {
+            numbers = "NA<br/>";
         }
         
         $("#contactInfo").html("<p>" +
