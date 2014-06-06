@@ -24,6 +24,6 @@
     }
     
     function onError(error) {
-        console.log("code: " + error.code + ", message: " + error.message);
+    	$("#position").html("Error code: " + error.code + ", message: " + error.message);
     }     
 })();

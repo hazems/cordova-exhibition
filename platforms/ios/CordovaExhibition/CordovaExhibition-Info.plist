@@ -2,18 +2,22 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
   <dict>
-    <key>CFBundleDevelopmentRegion</key>
-    <string>English</string>
-    <key>CFBundleDisplayName</key>
-    <string>${PRODUCT_NAME}</string>
-    <key>CFBundleExecutable</key>
-    <string>${EXECUTABLE_NAME}</string>
-    <key>CFBundleIconFile</key>
-    <string>icon.png</string>
+    <key>UIViewControllerBasedStatusBarAppearance</key>
+    <false/>
+    <key>UIStatusBarHidden</key>
+    <true/>
+    <key>LSApplicationCategoryType</key>
+    <string></string>
+    <key>CFBundleIdentifier</key>
+    <string>com.jsmobile.cordovaexhibition</string>
+    <key>CFBundleInfoDictionaryVersion</key>
+    <string>6.0</string>
     <key>CFBundleIcons</key>
     <dict>
       <key>CFBundlePrimaryIcon</key>
       <dict>
+        <key>UIPrerenderedIcon</key>
+        <false/>
         <key>CFBundleIconFiles</key>
         <array>
           <string>icon-40</string>
@@ -24,14 +28,28 @@
           <string>icon-72</string>
           <string>icon-72@2x</string>
         </array>
-        <key>UIPrerenderedIcon</key>
-        <false/>
       </dict>
     </dict>
+    <key>CFBundleVersion</key>
+    <string>1.0</string>
+    <key>NSMainNibFile~ipad</key>
+    <string></string>
+    <key>CFBundleExecutable</key>
+    <string>${EXECUTABLE_NAME}</string>
+    <key>LSRequiresIPhoneOS</key>
+    <true/>
+    <key>CFBundleShortVersionString</key>
+    <string>0.0.1</string>
+    <key>UISupportedInterfaceOrientations</key>
+    <array>
+      <string>UIInterfaceOrientationPortrait</string>
+    </array>
     <key>CFBundleIcons~ipad</key>
     <dict>
       <key>CFBundlePrimaryIcon</key>
       <dict>
+        <key>UIPrerenderedIcon</key>
+        <false/>
         <key>CFBundleIconFiles</key>
         <array>
           <string>icon-small</string>
@@ -44,32 +62,20 @@
           <string>icon-72</string>
           <string>icon-72@2x</string>
         </array>
-        <key>UIPrerenderedIcon</key>
-        <false/>
       </dict>
     </dict>
-    <key>CFBundleIdentifier</key>
-    <string>com.jsmobile.cordovaexhibition</string>
-    <key>CFBundleInfoDictionaryVersion</key>
-    <string>6.0</string>
-    <key>CFBundleName</key>
+    <key>CFBundleDisplayName</key>
     <string>${PRODUCT_NAME}</string>
     <key>CFBundlePackageType</key>
     <string>APPL</string>
+    <key>CFBundleIconFile</key>
+    <string>icon.png</string>
     <key>CFBundleSignature</key>
     <string>????</string>
-    <key>CFBundleVersion</key>
-    <string>1.0</string>
-    <key>LSRequiresIPhoneOS</key>
-    <true/>
     <key>NSMainNibFile</key>
     <string></string>
-    <key>NSMainNibFile~ipad</key>
-    <string></string>
-    <key>UISupportedInterfaceOrientations</key>
-    <array>
-      <string>UIInterfaceOrientationPortrait</string>
-    </array>
+    <key>CFBundleDevelopmentRegion</key>
+    <string>English</string>
     <key>UISupportedInterfaceOrientations~ipad</key>
     <array>
       <string>UIInterfaceOrientationPortrait</string>
@@ -77,7 +83,7 @@
       <string>UIInterfaceOrientationPortraitUpsideDown</string>
       <string>UIInterfaceOrientationLandscapeRight</string>
     </array>
-    <key>CFBundleShortVersionString</key>
-    <string>0.0.1</string>
+    <key>CFBundleName</key>
+    <string>${PRODUCT_NAME}</string>
   </dict>
 </plist>

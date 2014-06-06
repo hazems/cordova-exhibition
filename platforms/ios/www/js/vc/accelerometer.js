@@ -48,7 +48,7 @@
     }
     
     function onError() {
-        console.log("An error occurs during watching acceleration.");
+    	$("#acceleration").html("An error occurs during watching acceleration.");
     }  
     
     function enableStartWatchAccelerationButton(enable) {

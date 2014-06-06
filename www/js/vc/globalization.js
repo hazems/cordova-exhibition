@@ -28,11 +28,11 @@
     });
     
     function handleLocaleSuccess(locale) {            
-        $("#globInfo").html("Locale Name: " + locale.value + "<br/");
+        $("#globInfo").html("Locale Name: " + locale.value + "<br/>");
     }
     
     function handleLocaleError() {
-        $("#globInfo").html("Unable to get Locale name<br/");
+        $("#globInfo").html("Unable to get Locale name<br/>");
     }
 
     function handleLangSuccess(language) {            
@@ -40,6 +40,6 @@
     }
     
     function handleLangError() {
-        $("#globInfo").html("Unable to get preferred language name<br/");
+        $("#globInfo").html("Unable to get preferred language name<br/>");
     }    
 })();

@@ -45,7 +45,7 @@
     }
     
     function onError(error) {
-        console.log("An error occurs during watch heading: " + error.code);
+    	$("#compassHeading").html("An error occurs during watch heading: " + error.code);
     }  
     
     function enableStartWatchHeadingButton(enable) {

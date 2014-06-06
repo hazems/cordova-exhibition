@@ -1,7 +1,7 @@
 (function() {
     var mediaManager = MediaManager.getInstance();
     
-    $(document).on("pageinit", "#media", function(e) {
+    $(document).on("pageinit", "#mediaFC", function(e) {
         e.preventDefault();
         
         $("#recordSound").on("tap", function(e) {
@@ -18,13 +18,13 @@
             
             var recTime = 0;
             
-            document.getElementById("soundDuration").innerHTML = "Duration: " + recTime + " seconds";
+            $("#soundDuration").html("Duration: " + recTime + " seconds");
             
             $("#recordSoundDialog").popup("open");
             
             recInterval = setInterval(function() {
                                          recTime = recTime + 1;
-                                         document.getElementById("soundDuration").innerHTML = "Duration: " + recTime + " seconds";
+                                         $("#soundDuration").html("Duration: " + recTime + " seconds");
                                      }, 1000);            
         });       
         
@@ -41,12 +41,16 @@
             mediaManager.recordVoiceExternally(callback);         
         });
         
-        $("#recordSoundDialog").on("popupafterclose", function(event, ui) {
+        $("#recordSoundDialog").on("popupafterclose", function(e, ui) {
+            e.preventDefault();
+            
             clearInterval(recInterval);
             mediaManager.stopRecording();
         });        
         
         $("#stopRecordingSound").on("tap", function(e) {
+            e.preventDefault();
+            
             $("#recordSoundDialog").popup("close");
         });
         
@@ -66,7 +70,7 @@
         initPage();
     });
     
-    $(document).on("pagebeforehide", "#media", function(e) {
+    $(document).on("pagebeforehide", "#mediaFC", function(e) {
         
         //Make sure to stop any playing voices when the media view is left. 
         mediaManager.cleanUpResources();

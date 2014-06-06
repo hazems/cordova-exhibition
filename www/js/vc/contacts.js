@@ -25,13 +25,7 @@
                 contactsManager.getAllContacts(callback, filterText);
             }
         });
-    });
-    
-    $(document).on("pageshow", "#contacts", function(e) {
-        e.preventDefault();
-
-    });
-    
+    });    
     
     function updateContactsList(contacts) {
         $("#contactList").empty();

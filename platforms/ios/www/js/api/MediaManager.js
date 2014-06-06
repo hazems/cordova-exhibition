@@ -11,10 +11,9 @@ var MediaManager = (function () {
              startRecording : function (callback) {
                  var recordVoice = function(dirEntry) {
                      var basePath = "";
-                     var dirPath = dirEntry.toURL();
                      
-                     if (dirPath) {
-                         basePath = dirPath + "/";
+                     if (dirEntry) {
+                         basePath = dirEntry.toURL() + "/";
                      }
 
                      var mediaFilePath = basePath + (new Date()).getTime() + ".wav";
