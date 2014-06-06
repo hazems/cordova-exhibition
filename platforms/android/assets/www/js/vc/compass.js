@@ -29,7 +29,7 @@
         initPage();
     });
     
-    $(document).on("pagebeforehide", "#media", function(e) {
+    $(document).on("pagebeforehide", "#compass", function(e) {
         
         //Make sure to stop heading watch before leaving the view. 
         compassManager.stopWatchHeading(watchID);
