@@ -5,9 +5,9 @@ var AccelerometerManager = (function () {
   function createObject() {
       return {
           startWatchAcceleration: function (callback) {
-              navigator.accelerometer.watchAcceleration(callback.onSuccess, 
-                                                        callback.onError, 
-                                                        {frequency: 2000});
+              return navigator.accelerometer.watchAcceleration(callback.onSuccess,
+                                                               callback.onError,
+                                                               {frequency: 2000});
           },
           stopWatchAcceleration: function (watchID) {    
               if (watchID) {

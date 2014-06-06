@@ -9,4 +9,46 @@
     </author>
     <content src="index.html" />
     <access origin="*" />
+    <feature name="Battery">
+        <param name="wp-package" value="Battery" />
+    </feature>
+    <feature name="Camera">
+        <param name="wp-package" value="Camera" />
+    </feature>
+    <feature name="Contacts">
+        <param name="wp-package" value="Contacts" />
+    </feature>
+    <feature name="Device">
+        <param name="wp-package" value="Device" />
+    </feature>
+    <feature name="Accelerometer">
+        <param name="wp-package" value="Accelerometer" />
+    </feature>
+    <feature name="Compass">
+        <param name="wp-package" value="Compass" />
+    </feature>
+    <feature name="Notification">
+        <param name="wp-package" value="Notification" />
+    </feature>
+    <feature name="File">
+        <param name="wp-package" value="File" />
+    </feature>
+    <feature name="Globalization">
+        <param name="wp-package" value="Globalization" />
+    </feature>
+    <feature name="InAppBrowser">
+        <param name="wp-package" value="InAppBrowser" />
+    </feature>
+    <feature name="Media">
+        <param name="wp-package" value="Media" />
+    </feature>
+    <feature name="Capture">
+        <param name="wp-package" value="Capture" />
+    </feature>
+    <feature name="NetworkStatus">
+        <param name="wp-package" value="NetworkStatus" />
+    </feature>
+    <feature name="Vibration">
+        <param name="wp-package" value="Vibration" />
+    </feature>
 </widget>

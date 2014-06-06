@@ -215,6 +215,753 @@
         </PostBuildEvent>
     </PropertyGroup>
     <ItemGroup>
+        <Content Include="www\cordova.js" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\css\.DS_Store" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\css\app.css" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\img\.DS_Store" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\img\logo.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\index.html" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\.DS_Store" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\.DS_Store" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\ajax-loader.gif" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\action-black.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\action-white.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\alert-black.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\alert-white.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\arrow-d-black.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\arrow-d-l-black.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\arrow-d-l-white.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\arrow-d-r-black.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\arrow-d-r-white.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\arrow-d-white.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\arrow-l-black.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\arrow-l-white.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\arrow-r-black.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\arrow-r-white.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\arrow-u-black.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\arrow-u-l-black.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\arrow-u-l-white.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\arrow-u-r-black.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\arrow-u-r-white.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\arrow-u-white.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\audio-black.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\audio-white.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\back-black.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\back-white.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\bars-black.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\bars-white.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\bullets-black.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\bullets-white.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\calendar-black.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\calendar-white.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\camera-black.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\camera-white.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\carat-d-black.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\carat-d-white.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\carat-l-black.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\carat-l-white.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\carat-r-black.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\carat-r-white.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\carat-u-black.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\carat-u-white.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\check-black.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\check-white.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\clock-black.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\clock-white.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\cloud-black.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\cloud-white.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\comment-black.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\comment-white.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\delete-black.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\delete-white.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\edit-black.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\edit-white.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\eye-black.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\eye-white.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\forbidden-black.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\forbidden-white.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\forward-black.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\forward-white.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\gear-black.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\gear-white.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\grid-black.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\grid-white.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\heart-black.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\heart-white.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\home-black.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\home-white.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\info-black.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\info-white.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\location-black.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\location-white.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\lock-black.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\lock-white.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\mail-black.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\mail-white.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\minus-black.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\minus-white.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\navigation-black.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\navigation-white.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\phone-black.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\phone-white.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\plus-black.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\plus-white.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\power-black.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\power-white.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\recycle-black.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\recycle-white.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\refresh-black.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\refresh-white.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\search-black.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\search-white.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\shop-black.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\shop-white.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\star-black.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\star-white.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\tag-black.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\tag-white.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\user-black.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\user-white.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\video-black.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-png\video-white.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\action-black.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\action-white.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\alert-black.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\alert-white.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\arrow-d-black.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\arrow-d-l-black.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\arrow-d-l-white.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\arrow-d-r-black.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\arrow-d-r-white.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\arrow-d-white.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\arrow-l-black.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\arrow-l-white.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\arrow-r-black.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\arrow-r-white.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\arrow-u-black.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\arrow-u-l-black.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\arrow-u-l-white.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\arrow-u-r-black.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\arrow-u-r-white.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\arrow-u-white.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\audio-black.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\audio-white.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\back-black.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\back-white.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\bars-black.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\bars-white.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\bullets-black.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\bullets-white.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\calendar-black.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\calendar-white.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\camera-black.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\camera-white.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\carat-d-black.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\carat-d-white.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\carat-l-black.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\carat-l-white.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\carat-r-black.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\carat-r-white.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\carat-u-black.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\carat-u-white.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\check-black.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\check-white.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\clock-black.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\clock-white.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\cloud-black.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\cloud-white.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\comment-black.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\comment-white.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\delete-black.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\delete-white.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\edit-black.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\edit-white.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\eye-black.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\eye-white.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\forbidden-black.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\forbidden-white.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\forward-black.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\forward-white.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\gear-black.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\gear-white.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\grid-black.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\grid-white.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\heart-black.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\heart-white.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\home-black.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\home-white.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\info-black.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\info-white.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\location-black.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\location-white.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\lock-black.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\lock-white.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\mail-black.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\mail-white.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\minus-black.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\minus-white.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\navigation-black.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\navigation-white.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\phone-black.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\phone-white.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\plus-black.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\plus-white.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\power-black.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\power-white.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\recycle-black.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\recycle-white.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\refresh-black.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\refresh-white.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\search-black.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\search-white.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\shop-black.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\shop-white.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\star-black.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\star-white.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\tag-black.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\tag-white.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\user-black.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\user-white.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\video-black.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\images\icons-svg\video-white.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\jqm.page.params.js" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\jquery-1.10.2.min.js" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\jquery.mobile-1.4.0.min.css" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\jquery.mobile-1.4.0.min.js" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\json2.js" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\jqueryMobile\jstorage.js" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\.DS_Store" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\api\.DS_Store" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\api\._AccelerometerManager.js" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\api\AccelerometerManager.js" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\api\CameraManager.js" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\api\CompassManager.js" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\api\ConnectionManager.js" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\api\ContactsManager.js" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\api\DeviceManager.js" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\api\FileManager.js" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\api\GeolocationManager.js" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\api\GlobalizationManager.js" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\api\InAppBrowserManager.js" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\api\MediaManager.js" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\api\NotificationManager.js" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\api\StorageManager.js" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\vc\.DS_Store" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\vc\._accelerometer.js" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\vc\._compass.js" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\vc\._contactDetails.js" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\vc\accelerometer.js" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\vc\camera.js" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\vc\common.js" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\vc\compass.js" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\vc\connection.js" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\vc\contactDetails.js" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\vc\contacts.js" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\vc\device.js" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\vc\geolocation.js" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\vc\globalization.js" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\vc\inAppBrowser.js" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\vc\media.js" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\vc\notification.js" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\vc\storage.js" />
+    </ItemGroup>
+    <ItemGroup>
         <Compile Include="Plugins\org.apache.cordova.battery-status\Battery.cs" />
     </ItemGroup>
     <ItemGroup>
@@ -302,741 +1049,168 @@
         <Compile Include="Plugins\org.apache.cordova.vibration\Vibration.cs" />
     </ItemGroup>
     <ItemGroup>
-        <Content Include="www/cordova.js" />
+        <Content Include="www\plugins\org.apache.cordova.battery-status\www\battery.js" />
     </ItemGroup>
     <ItemGroup>
-        <Content Include="www/cordova_plugins.js" />
+        <Content Include="www\plugins\org.apache.cordova.camera\www\CameraConstants.js" />
     </ItemGroup>
     <ItemGroup>
-        <Content Include="www/css/.DS_Store" />
+        <Content Include="www\plugins\org.apache.cordova.camera\www\CameraPopoverOptions.js" />
     </ItemGroup>
     <ItemGroup>
-        <Content Include="www/css/app.css" />
+        <Content Include="www\plugins\org.apache.cordova.camera\www\Camera.js" />
     </ItemGroup>
     <ItemGroup>
-        <Content Include="www/img/.DS_Store" />
+        <Content Include="www\plugins\org.apache.cordova.camera\www\CameraPopoverHandle.js" />
     </ItemGroup>
     <ItemGroup>
-        <Content Include="www/img/logo.png" />
+        <Content Include="www\plugins\org.apache.cordova.contacts\www\contacts.js" />
     </ItemGroup>
     <ItemGroup>
-        <Content Include="www/index.html" />
+        <Content Include="www\plugins\org.apache.cordova.contacts\www\Contact.js" />
     </ItemGroup>
     <ItemGroup>
-        <Content Include="www/jqueryMobile/.DS_Store" />
+        <Content Include="www\plugins\org.apache.cordova.contacts\www\ContactAddress.js" />
     </ItemGroup>
     <ItemGroup>
-        <Content Include="www/jqueryMobile/images/.DS_Store" />
+        <Content Include="www\plugins\org.apache.cordova.contacts\www\ContactError.js" />
     </ItemGroup>
     <ItemGroup>
-        <Content Include="www/jqueryMobile/images/ajax-loader.gif" />
+        <Content Include="www\plugins\org.apache.cordova.contacts\www\ContactField.js" />
     </ItemGroup>
     <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/action-black.png" />
+        <Content Include="www\plugins\org.apache.cordova.contacts\www\ContactFindOptions.js" />
     </ItemGroup>
     <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/action-white.png" />
+        <Content Include="www\plugins\org.apache.cordova.contacts\www\ContactName.js" />
     </ItemGroup>
     <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/alert-black.png" />
+        <Content Include="www\plugins\org.apache.cordova.contacts\www\ContactOrganization.js" />
     </ItemGroup>
     <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/alert-white.png" />
+        <Content Include="www\plugins\org.apache.cordova.contacts\www\ContactFieldType.js" />
     </ItemGroup>
     <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/arrow-d-black.png" />
+        <Content Include="www\plugins\org.apache.cordova.device\www\device.js" />
     </ItemGroup>
     <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/arrow-d-l-black.png" />
+        <Content Include="www\plugins\org.apache.cordova.device-motion\www\Acceleration.js" />
     </ItemGroup>
     <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/arrow-d-l-white.png" />
+        <Content Include="www\plugins\org.apache.cordova.device-motion\www\accelerometer.js" />
     </ItemGroup>
     <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/arrow-d-r-black.png" />
+        <Content Include="www\plugins\org.apache.cordova.device-orientation\www\CompassError.js" />
     </ItemGroup>
     <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/arrow-d-r-white.png" />
+        <Content Include="www\plugins\org.apache.cordova.device-orientation\www\CompassHeading.js" />
     </ItemGroup>
     <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/arrow-d-white.png" />
+        <Content Include="www\plugins\org.apache.cordova.device-orientation\www\compass.js" />
     </ItemGroup>
     <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/arrow-l-black.png" />
+        <Content Include="www\plugins\org.apache.cordova.dialogs\www\notification.js" />
     </ItemGroup>
     <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/arrow-l-white.png" />
+        <Content Include="www\plugins\org.apache.cordova.file\www\DirectoryEntry.js" />
     </ItemGroup>
     <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/arrow-r-black.png" />
+        <Content Include="www\plugins\org.apache.cordova.file\www\DirectoryReader.js" />
     </ItemGroup>
     <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/arrow-r-white.png" />
+        <Content Include="www\plugins\org.apache.cordova.file\www\Entry.js" />
     </ItemGroup>
     <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/arrow-u-black.png" />
+        <Content Include="www\plugins\org.apache.cordova.file\www\File.js" />
     </ItemGroup>
     <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/arrow-u-l-black.png" />
+        <Content Include="www\plugins\org.apache.cordova.file\www\FileEntry.js" />
     </ItemGroup>
     <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/arrow-u-l-white.png" />
+        <Content Include="www\plugins\org.apache.cordova.file\www\FileError.js" />
     </ItemGroup>
     <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/arrow-u-r-black.png" />
+        <Content Include="www\plugins\org.apache.cordova.file\www\FileReader.js" />
     </ItemGroup>
     <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/arrow-u-r-white.png" />
+        <Content Include="www\plugins\org.apache.cordova.file\www\FileSystem.js" />
     </ItemGroup>
     <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/arrow-u-white.png" />
+        <Content Include="www\plugins\org.apache.cordova.file\www\FileUploadOptions.js" />
     </ItemGroup>
     <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/audio-black.png" />
+        <Content Include="www\plugins\org.apache.cordova.file\www\FileUploadResult.js" />
     </ItemGroup>
     <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/audio-white.png" />
+        <Content Include="www\plugins\org.apache.cordova.file\www\FileWriter.js" />
     </ItemGroup>
     <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/back-black.png" />
+        <Content Include="www\plugins\org.apache.cordova.file\www\Flags.js" />
     </ItemGroup>
     <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/back-white.png" />
+        <Content Include="www\plugins\org.apache.cordova.file\www\LocalFileSystem.js" />
     </ItemGroup>
     <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/bars-black.png" />
+        <Content Include="www\plugins\org.apache.cordova.file\www\Metadata.js" />
     </ItemGroup>
     <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/bars-white.png" />
+        <Content Include="www\plugins\org.apache.cordova.file\www\ProgressEvent.js" />
     </ItemGroup>
     <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/bullets-black.png" />
+        <Content Include="www\plugins\org.apache.cordova.file\www\requestFileSystem.js" />
     </ItemGroup>
     <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/bullets-white.png" />
+        <Content Include="www\plugins\org.apache.cordova.file\www\resolveLocalFileSystemURI.js" />
     </ItemGroup>
     <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/calendar-black.png" />
+        <Content Include="www\plugins\org.apache.cordova.file\www\wp\FileUploadOptions.js" />
     </ItemGroup>
     <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/calendar-white.png" />
+        <Content Include="www\plugins\org.apache.cordova.globalization\www\GlobalizationError.js" />
     </ItemGroup>
     <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/camera-black.png" />
+        <Content Include="www\plugins\org.apache.cordova.globalization\www\globalization.js" />
     </ItemGroup>
     <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/camera-white.png" />
+        <Content Include="www\plugins\org.apache.cordova.inappbrowser\www\inappbrowser.js" />
     </ItemGroup>
     <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/carat-d-black.png" />
+        <Content Include="www\plugins\org.apache.cordova.media\www\MediaError.js" />
     </ItemGroup>
     <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/carat-d-white.png" />
+        <Content Include="www\plugins\org.apache.cordova.media\www\Media.js" />
     </ItemGroup>
     <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/carat-l-black.png" />
+        <Content Include="www\plugins\org.apache.cordova.media-capture\www\CaptureAudioOptions.js" />
     </ItemGroup>
     <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/carat-l-white.png" />
+        <Content Include="www\plugins\org.apache.cordova.media-capture\www\CaptureImageOptions.js" />
     </ItemGroup>
     <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/carat-r-black.png" />
+        <Content Include="www\plugins\org.apache.cordova.media-capture\www\CaptureVideoOptions.js" />
     </ItemGroup>
     <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/carat-r-white.png" />
+        <Content Include="www\plugins\org.apache.cordova.media-capture\www\CaptureError.js" />
     </ItemGroup>
     <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/carat-u-black.png" />
+        <Content Include="www\plugins\org.apache.cordova.media-capture\www\MediaFileData.js" />
     </ItemGroup>
     <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/carat-u-white.png" />
+        <Content Include="www\plugins\org.apache.cordova.media-capture\www\MediaFile.js" />
     </ItemGroup>
     <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/check-black.png" />
+        <Content Include="www\plugins\org.apache.cordova.media-capture\www\capture.js" />
     </ItemGroup>
     <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/check-white.png" />
+        <Content Include="www\plugins\org.apache.cordova.network-information\www\network.js" />
     </ItemGroup>
     <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/clock-black.png" />
+        <Content Include="www\plugins\org.apache.cordova.network-information\www\Connection.js" />
     </ItemGroup>
     <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/clock-white.png" />
+        <Content Include="www\plugins\org.apache.cordova.vibration\www\vibration.js" />
     </ItemGroup>
     <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/cloud-black.png" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/cloud-white.png" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/comment-black.png" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/comment-white.png" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/delete-black.png" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/delete-white.png" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/edit-black.png" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/edit-white.png" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/eye-black.png" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/eye-white.png" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/forbidden-black.png" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/forbidden-white.png" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/forward-black.png" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/forward-white.png" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/gear-black.png" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/gear-white.png" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/grid-black.png" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/grid-white.png" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/heart-black.png" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/heart-white.png" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/home-black.png" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/home-white.png" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/info-black.png" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/info-white.png" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/location-black.png" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/location-white.png" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/lock-black.png" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/lock-white.png" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/mail-black.png" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/mail-white.png" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/minus-black.png" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/minus-white.png" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/navigation-black.png" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/navigation-white.png" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/phone-black.png" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/phone-white.png" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/plus-black.png" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/plus-white.png" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/power-black.png" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/power-white.png" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/recycle-black.png" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/recycle-white.png" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/refresh-black.png" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/refresh-white.png" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/search-black.png" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/search-white.png" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/shop-black.png" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/shop-white.png" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/star-black.png" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/star-white.png" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/tag-black.png" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/tag-white.png" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/user-black.png" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/user-white.png" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/video-black.png" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-png/video-white.png" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/action-black.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/action-white.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/alert-black.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/alert-white.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/arrow-d-black.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/arrow-d-l-black.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/arrow-d-l-white.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/arrow-d-r-black.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/arrow-d-r-white.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/arrow-d-white.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/arrow-l-black.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/arrow-l-white.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/arrow-r-black.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/arrow-r-white.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/arrow-u-black.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/arrow-u-l-black.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/arrow-u-l-white.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/arrow-u-r-black.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/arrow-u-r-white.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/arrow-u-white.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/audio-black.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/audio-white.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/back-black.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/back-white.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/bars-black.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/bars-white.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/bullets-black.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/bullets-white.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/calendar-black.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/calendar-white.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/camera-black.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/camera-white.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/carat-d-black.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/carat-d-white.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/carat-l-black.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/carat-l-white.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/carat-r-black.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/carat-r-white.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/carat-u-black.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/carat-u-white.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/check-black.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/check-white.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/clock-black.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/clock-white.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/cloud-black.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/cloud-white.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/comment-black.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/comment-white.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/delete-black.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/delete-white.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/edit-black.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/edit-white.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/eye-black.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/eye-white.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/forbidden-black.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/forbidden-white.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/forward-black.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/forward-white.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/gear-black.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/gear-white.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/grid-black.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/grid-white.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/heart-black.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/heart-white.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/home-black.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/home-white.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/info-black.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/info-white.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/location-black.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/location-white.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/lock-black.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/lock-white.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/mail-black.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/mail-white.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/minus-black.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/minus-white.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/navigation-black.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/navigation-white.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/phone-black.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/phone-white.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/plus-black.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/plus-white.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/power-black.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/power-white.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/recycle-black.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/recycle-white.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/refresh-black.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/refresh-white.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/search-black.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/search-white.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/shop-black.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/shop-white.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/star-black.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/star-white.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/tag-black.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/tag-white.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/user-black.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/user-white.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/video-black.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/images/icons-svg/video-white.svg" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/jqm.page.params.js" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/jquery-1.10.2.min.js" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/jquery.mobile-1.4.0.min.css" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/jquery.mobile-1.4.0.min.js" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/json2.js" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/jqueryMobile/jstorage.js" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/js/.DS_Store" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/js/api/.DS_Store" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/js/api/AccelerometerManager.js" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/js/api/CameraManager.js" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/js/api/CompassManager.js" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/js/api/ConnectionManager.js" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/js/api/ContactsManager.js" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/js/api/DeviceManager.js" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/js/api/FileManager.js" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/js/api/GeolocationManager.js" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/js/api/GlobalizationManager.js" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/js/api/InAppBrowserManager.js" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/js/api/MediaManager.js" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/js/api/NotificationManager.js" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/js/api/StorageManager.js" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/js/vc/.DS_Store" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/js/vc/accelerometer.js" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/js/vc/camera.js" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/js/vc/common.js" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/js/vc/compass.js" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/js/vc/connection.js" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/js/vc/contactDetails.js" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/js/vc/contacts.js" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/js/vc/device.js" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/js/vc/geolocation.js" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/js/vc/globalization.js" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/js/vc/inAppBrowser.js" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/js/vc/media.js" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/js/vc/notification.js" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www/js/vc/storage.js" />
+        <Content Include="www\cordova_plugins.js" />
     </ItemGroup>
 </Project>
