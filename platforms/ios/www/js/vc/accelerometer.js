@@ -32,7 +32,7 @@
     $(document).on("pagebeforehide", "#accelerometer", function(e) {
         
         //Make sure to stop heading watch before leaving the view. 
-        accelerometerManager.stopWatchAcceleration();
+        accelerometerManager.stopWatchAcceleration(watchID);
         enableStartWatchAccelerationButton(true);
     });    
     

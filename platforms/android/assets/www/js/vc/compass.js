@@ -32,7 +32,7 @@
     $(document).on("pagebeforehide", "#media", function(e) {
         
         //Make sure to stop heading watch before leaving the view. 
-        compassManager.stopWatchHeading();
+        compassManager.stopWatchHeading(watchID);
         enableStartWatchHeadingButton(true);
     });    
     
