@@ -25,11 +25,11 @@
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/app.css" />
         <link rel="stylesheet" href="jqueryMobile/jquery.mobile-1.4.0.min.css">    
-          
-        <script src="jqueryMobile/json2.js"></script>            
+              
         <script src="jqueryMobile/jquery-1.10.2.min.js"></script>                                  
         <script src="jqueryMobile/jquery.mobile-1.4.0.min.js"></script>   
-        <script src="jqueryMobile/jqm.page.params.js"></script>      
+        <script src="jqueryMobile/jqm.page.params.js"></script>   
+        <script src="jqueryMobile/jquery.validate.min.js"></script>  
                      
         <title>Cordova Exhibition</title>
     </head>
@@ -281,27 +281,28 @@
             <div data-role="content">
                 <h1>Welcome to the Storage Gallery</h1>
                 <p>Persist your information using Cordova Web Storage API.</p>
-                <div data-role="fieldcontain">
-                    <label for="userName">Name</label> 
-                    <input type="text" id="userName"></input>
-                   
-                    <br/>
-                        
-                    <label for="address">Address</label> 
-                    <input type="text" id="address"></input>
-                   
-                    <br/><br/>
+                <form id="storageForm">
+                    <div class="ui-field-contain">
+                        <label for="userName">Name</label> 
+                        <input type="text" id="userName" name="userName"></input>
+                    </div>
+                    <div class="ui-field-contain">                        
+                        <label for="userEmail">Email</label> 
+                        <input type="text" id="userEmail" name="userEmail"></input>
+                    </div>
 
                     <div class="center-wrapper">
                         <input type="button" id="saveInfo" data-icon="action" value="Save" data-inline="true"/>
                         <input type="button" id="reloadInfo" data-icon="refresh" value="Reload" data-inline="true"/>   
                     </div>  
-                   
+                    
+                    <ul id="storageMessageBox"></ul>
+                    
                     <div id="storageResult">
-                    </div>                                           
-                </div>
-            </div>  
-        </div>         
+                    </div>   
+                </form>                                        
+            </div>
+        </div>     
                                 
         <script type="text/javascript" src="cordova.js"></script>
         

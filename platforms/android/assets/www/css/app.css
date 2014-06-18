@@ -16,3 +16,8 @@ a {
 .ui-header .ui-title {
 	overflow: visible !important;
 }
+
+.error {
+    color:red;
+    display:block;
+}

@@ -6,11 +6,16 @@
         e.preventDefault();
         
         $("#saveInfo").on("tap", function(e) {
-            e.preventDefault();                    
+            e.preventDefault();          
+            
+            
+            if (! $("#storageForm").valid()) {
+                return;
+            }
             
             storageManager.set(INFO_KEY, JSON.stringify({
                                              userName: $("#userName").val(), 
-                                             address: $("#address").val()
+                                             userEmail: $("#userEmail").val()
                                          })
             ); 
             
@@ -23,11 +28,30 @@
             reloadUserInfo();   
             
             $("#storageResult").html("Reloading completes");   
-        });
+        });          
     });
     
     $(document).on("pageshow", "#storage", function(e) {
         e.preventDefault();
+        
+        $("#storageForm").validate({
+        	errorLabelContainer: "#storageMessageBox",
+        	wrapper: "li", 
+        	rules: {
+        		userName: "required",
+        		userEmail: {
+                    required: true,
+                    email: true
+                }
+            },
+            messages: {
+            	userName: "Please specify user name",
+            	userEmail: {
+                    required: "Please specify email",
+                    email: "Please enter valid email"
+                }
+            }
+        }); 
         
         reloadUserInfo();
     });
@@ -41,7 +65,7 @@
     function populateFormFields(userInfo) {
         if (userInfo) {
             $("#userName").val(userInfo.userName);
-            $("#address").val(userInfo.address);    
+            $("#userEmail").val(userInfo.userEmail);    
         }        
     }
     
