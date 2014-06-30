@@ -30,6 +30,7 @@
         <script src="jqueryMobile/jquery.mobile-1.4.0.min.js"></script>   
         <script src="jqueryMobile/jqm.page.params.js"></script>   
         <script src="jqueryMobile/jquery.validate.min.js"></script>  
+        <script src="js/common.js"></script>         
                      
         <title>Cordova Exhibition</title>
     </head>
@@ -67,14 +68,10 @@
             <div data-role="content">
                 <h1>Welcome to the Accelerometer Gallery</h1>
                 <p>Click 'Start Watch Acceleration' button below to start watch acceleration.</p>
-                <div data-role="fieldcontain">
-                    <div class="center-wrapper">
-                        <input type="button" id="startWatchAcceleration" value="Start Watch Acceleration"/>
-                        <input type="button" id="stopWatchAcceleration" value="Stop Watch Acceleration"/><br/>
-                    </div>  
-                    <div id="acceleration">
-                    </div>                                                                
-                </div>
+                <input type="button" id="startWatchAcceleration" value="Start Watch Acceleration"/>
+                <input type="button" id="stopWatchAcceleration" value="Stop Watch Acceleration"/> 
+                <div id="acceleration">
+                </div>                                                                
             </div>             
         </div>         
         
@@ -114,12 +111,10 @@
             <div data-role="content">
                 <h1>Welcome to the Compass Gallery</h1>
                 <p>Click 'Start Watch Heading' button below to start watch heading using your device's compass.</p>
-                <div data-role="fieldcontain">
-                    <input type="button" id="startWatchHeading" value="Start Watch Heading"/>
-                    <input type="button" id="stopWatchHeading" value="Stop Watch Heading"/><br/>
-                       
-                    <div id="compassHeading">
-                    </div>                                                                
+                <input type="button" id="startWatchHeading" value="Start Watch Heading"/>
+                <input type="button" id="stopWatchHeading" value="Stop Watch Heading"/><br/>
+                   
+                <div id="compassHeading">
                 </div>
             </div>        
         </div>              
@@ -227,28 +222,26 @@
             <div data-role="content">
                 <h1>Welcome to the Media / Capture Gallery</h1>
                 <p>Click 'Record Sound' or 'Record Sound Externally' button below to start recording your voice.</p>
-                <div data-role="fieldcontain">
-                    <input type="hidden" id="location"/> 
-                    <div class="center-wrapper">
-                        <input type="button" id="recordSound" data-icon="audio" value="Record Sound"/>
-                        <input type="button" id="recordSoundExt" data-icon="audio" value="Record Sound Externally"/>
-                        <input type="button" id="playSound" data-icon="refresh" value="Playback"/><br/>
-                    </div>  
-                       
-                     <div data-role="popup" id="recordSoundDialog" data-dismissible="false" style="width:250px">
-                         <div data-role="header">
-                             <h1>Recording</h1>
+                <input type="hidden" id="location"/> 
+                <div class="center-wrapper">
+                    <input type="button" id="recordSound" data-icon="audio" value="Record Sound"/>
+                    <input type="button" id="recordSoundExt" data-icon="audio" value="Record Sound Externally"/>
+                    <input type="button" id="playSound" data-icon="refresh" value="Playback"/><br/>
+                </div>  
+                   
+                <div data-role="popup" id="recordSoundDialog" data-dismissible="false" style="width:250px">
+                     <div data-role="header">
+                         <h1>Recording</h1>
+                     </div>
+                
+                     <div data-role="content">
+                         <div class="center-wrapper">
+                             <div id="soundDuration"></div>
+                             <input type="button" id="stopRecordingSound" value="Stop Recording" 
+                                    class="center-button" data-inline="true"/>
                          </div>
-                    
-                         <div data-role="content">
-                             <div class="center-wrapper">
-                                 <div id="soundDuration"></div>
-                                 <input type="button" id="stopRecordingSound" value="Stop Recording" 
-                                        class="center-button" data-inline="true"/>
-                             </div>
-                         </div>
-                      </div>                                                                
-                  </div>
+                     </div> 
+                 </div>
             </div>                 
         </div>               
         
@@ -321,8 +314,7 @@
         <script type="text/javascript" src="js/api/NotificationManager.js"></script>
         <script type="text/javascript" src="js/api/StorageManager.js"></script>
                          
-        <!-- View controller files -->
-        <script type="text/javascript" src="js/vc/common.js"></script>        
+        <!-- View controller files -->      
         <script type="text/javascript" src="js/vc/accelerometer.js"></script>                      
         <script type="text/javascript" src="js/vc/camera.js"></script>
         <script type="text/javascript" src="js/vc/compass.js"></script>  

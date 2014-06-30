@@ -8,7 +8,7 @@ var FileManager = (function () {
       var FILE_BASE = "file:///";
       
       return {
-          copyFileToAppDirectory: function (filePath, callback) {                  
+          copyFileToAppDirectory: function (filePath, cb) {                  
              var callback = {};
                 
              callback.requestSuccess = function (dirEntry) {
@@ -18,11 +18,14 @@ var FileManager = (function () {
              
                  window.resolveLocalFileSystemURL(filePath, function(file) {
                      var filename = filePath.replace(/^.*[\\\/]/, '');
-                         
-                     file.moveTo(dirEntry, filename);
                      
-                     callback.copySuccess(dirEntry.toURL() + "/" + filename);
-                  }, callback.copyError);  
+                     var copyToSuccess = function (fileEntry) {
+ 					     console.log("file is copied to: " + fileEntry.toURL());
+ 					     cb.copySuccess(fileEntry.toURL());
+ 					 };
+ 					
+                     file.copyTo(dirEntry, filename, copyToSuccess, cb.copyError);                     
+                  }, cb.copyError);  
              };  
              
              callback.requestError = function (error) {

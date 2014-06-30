@@ -902,6 +902,9 @@
         <Content Include="www\js\api\StorageManager.js" />
     </ItemGroup>
     <ItemGroup>
+        <Content Include="www\js\common.js" />
+    </ItemGroup>
+    <ItemGroup>
         <Content Include="www\js\vc\.DS_Store" />
     </ItemGroup>
     <ItemGroup>
@@ -909,9 +912,6 @@
     </ItemGroup>
     <ItemGroup>
         <Content Include="www\js\vc\camera.js" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www\js\vc\common.js" />
     </ItemGroup>
     <ItemGroup>
         <Content Include="www\js\vc\compass.js" />

@@ -40,7 +40,7 @@ var MediaManager = (function () {
                      recordVoice();
                  }
             },
-            stopRecording : function (callback) {
+            stopRecording : function () {
             	if (recordingMedia) {
             		recordingMedia.stopRecord();   
                 	recordingMedia.release();

@@ -4,7 +4,7 @@
   <Languages xmlns="">
     <Language code="en-US" />
   </Languages>
-  <App Author="CordovaExhibition author" BitsPerPixel="32" Description="Apache Cordova for Windows Phone" Genre="apps.normal" ProductID="{171DED1C-A159-471F-B83C-775AF40772C5}" Publisher="CordovaExhibition" PublisherID="{db093ed5-53b1-45f7-af72-751e8f36ab80}" RuntimeType="Silverlight" Title="CordovaExhibition" Version="0.0.1" xmlns="">
+  <App Author="CordovaExhibition author" BitsPerPixel="32" Description="Apache Cordova for Windows Phone" Genre="apps.normal" ProductID="{B0E9516F-736F-4A1D-9393-334F80898DAE}" Publisher="CordovaExhibition" PublisherID="{db093ed5-53b1-45f7-af72-751e8f36ab80}" RuntimeType="Silverlight" Title="CordovaExhibition" Version="0.0.1" xmlns="">
     <IconPath IsRelative="true" IsResource="false">ApplicationIcon.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_WEBBROWSERCOMPONENT" />
