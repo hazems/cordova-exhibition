@@ -16,7 +16,7 @@ var CameraManager = (function () {
               navigator.camera.getPicture(callback.onSuccess, 
                                           callback.onError, 
                                           { 
-                                              quality: 30, 
+                                              quality: 80,
                                               destinationType: Camera.DestinationType.FILE_URI, 
                                               sourceType: source,
                                               correctOrientation: true 

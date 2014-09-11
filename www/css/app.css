@@ -21,3 +21,10 @@ a {
     color:red;
     display:block;
 }
+
+.center-screen {
+    position: absolute; 
+    top: 50%; 
+    left: 20px; 
+    margin-top: -1.2em;
+}
