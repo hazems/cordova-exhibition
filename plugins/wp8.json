@@ -39,49 +39,49 @@
     },
     "installed_plugins": {
         "org.apache.cordova.battery-status": {
-            "PACKAGE_NAME": "{2DC55ABA-E555-4EB9-B0AB-21EABCAFEF94}"
+            "PACKAGE_NAME": "{2C528FD1-156A-4A0C-8BB8-DD37820E6FDE}"
         },
         "org.apache.cordova.camera": {
-            "PACKAGE_NAME": "{2DC55ABA-E555-4EB9-B0AB-21EABCAFEF94}"
+            "PACKAGE_NAME": "{2C528FD1-156A-4A0C-8BB8-DD37820E6FDE}"
         },
         "org.apache.cordova.contacts": {
-            "PACKAGE_NAME": "{2DC55ABA-E555-4EB9-B0AB-21EABCAFEF94}"
+            "PACKAGE_NAME": "{2C528FD1-156A-4A0C-8BB8-DD37820E6FDE}"
         },
         "org.apache.cordova.device": {
-            "PACKAGE_NAME": "{2DC55ABA-E555-4EB9-B0AB-21EABCAFEF94}"
+            "PACKAGE_NAME": "{2C528FD1-156A-4A0C-8BB8-DD37820E6FDE}"
         },
         "org.apache.cordova.device-motion": {
-            "PACKAGE_NAME": "{2DC55ABA-E555-4EB9-B0AB-21EABCAFEF94}"
+            "PACKAGE_NAME": "{2C528FD1-156A-4A0C-8BB8-DD37820E6FDE}"
         },
         "org.apache.cordova.device-orientation": {
-            "PACKAGE_NAME": "{2DC55ABA-E555-4EB9-B0AB-21EABCAFEF94}"
+            "PACKAGE_NAME": "{2C528FD1-156A-4A0C-8BB8-DD37820E6FDE}"
         },
         "org.apache.cordova.dialogs": {
-            "PACKAGE_NAME": "{2DC55ABA-E555-4EB9-B0AB-21EABCAFEF94}"
+            "PACKAGE_NAME": "{2C528FD1-156A-4A0C-8BB8-DD37820E6FDE}"
         },
         "org.apache.cordova.file": {
-            "PACKAGE_NAME": "{2DC55ABA-E555-4EB9-B0AB-21EABCAFEF94}"
+            "PACKAGE_NAME": "{2C528FD1-156A-4A0C-8BB8-DD37820E6FDE}"
         },
         "org.apache.cordova.geolocation": {
-            "PACKAGE_NAME": "{2DC55ABA-E555-4EB9-B0AB-21EABCAFEF94}"
+            "PACKAGE_NAME": "{2C528FD1-156A-4A0C-8BB8-DD37820E6FDE}"
         },
         "org.apache.cordova.globalization": {
-            "PACKAGE_NAME": "{2DC55ABA-E555-4EB9-B0AB-21EABCAFEF94}"
+            "PACKAGE_NAME": "{2C528FD1-156A-4A0C-8BB8-DD37820E6FDE}"
         },
         "org.apache.cordova.inappbrowser": {
-            "PACKAGE_NAME": "{2DC55ABA-E555-4EB9-B0AB-21EABCAFEF94}"
+            "PACKAGE_NAME": "{2C528FD1-156A-4A0C-8BB8-DD37820E6FDE}"
         },
         "org.apache.cordova.media": {
-            "PACKAGE_NAME": "{2DC55ABA-E555-4EB9-B0AB-21EABCAFEF94}"
+            "PACKAGE_NAME": "{2C528FD1-156A-4A0C-8BB8-DD37820E6FDE}"
         },
         "org.apache.cordova.media-capture": {
-            "PACKAGE_NAME": "{2DC55ABA-E555-4EB9-B0AB-21EABCAFEF94}"
+            "PACKAGE_NAME": "{2C528FD1-156A-4A0C-8BB8-DD37820E6FDE}"
         },
         "org.apache.cordova.network-information": {
-            "PACKAGE_NAME": "{2DC55ABA-E555-4EB9-B0AB-21EABCAFEF94}"
+            "PACKAGE_NAME": "{2C528FD1-156A-4A0C-8BB8-DD37820E6FDE}"
         },
         "org.apache.cordova.vibration": {
-            "PACKAGE_NAME": "{2DC55ABA-E555-4EB9-B0AB-21EABCAFEF94}"
+            "PACKAGE_NAME": "{2C528FD1-156A-4A0C-8BB8-DD37820E6FDE}"
         }
     },
     "dependent_plugins": {}
