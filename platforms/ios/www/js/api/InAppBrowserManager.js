@@ -1,29 +1,28 @@
-//Singleton Object
 var InAppBrowserManager = (function () {     
-  var instance;
+    var instance;
  
-  function createObject() {
-      return {
-          openWindow: function (url) {
-              var windowRef = window.open(url, '_blank', 'location=no');
+    function createObject() {
+        return {
+            openWindow: function (url) {
+                var windowRef = window.open(url, '_blank', 'location=no');
               
-              return windowRef; 
-          },
-          closeWindow: function (windowRef) {  
-              if (windowRef) {
-                  windowRef.close();
-              }
-          }
-      };
-  };
+                return windowRef;
+            },
+            closeWindow: function (windowRef) {
+                if (windowRef) {
+                    windowRef.close();
+                }
+            }
+        };
+    };
  
-  return {
-    getInstance: function () {
-      if (!instance) {
-          instance = createObject();
-      }
+    return {
+        getInstance: function () {
+            if (!instance) {
+                instance = createObject();
+            }
  
-      return instance;
-    }
-  }; 
+            return instance;
+        }
+    };
 })();

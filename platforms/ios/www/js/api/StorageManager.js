@@ -1,25 +1,24 @@
-//Singleton Object
 var StorageManager = (function () {     
-  var instance;
+    var instance;
  
-  function createObject() {
-      return {
-          set: function (key, value) {
-              window.localStorage.setItem(key, value);
-          },
-          get: function (key) {
-        	  return window.localStorage.getItem(key);
-          }
-      };
-  };
+    function createObject() {
+        return {
+            set: function (key, value) {
+                window.localStorage.setItem(key, value);
+            },
+            get: function (key) {
+        	    return window.localStorage.getItem(key);
+            }
+        };
+    };
  
-  return {
-    getInstance: function () {
-      if (!instance) {
-          instance = createObject();
-      }
+    return {
+        getInstance: function () {
+            if (!instance) {
+                instance = createObject();
+            }
  
-      return instance;
-    }
-  }; 
+            return instance;
+        }
+    };
 })();

@@ -1,51 +1,50 @@
-//Singleton Object
-var MediaManager = (function () {     
-  var instance;
+var MediaManager = (function () {
+    var instance;
  
-  function createObject() {
-      var fileManager = FileManager.getInstance();   
-      var recordingMedia;
-      var audioMedia;
+    function createObject() {
+        var fileManager = FileManager.getInstance();
+        var recordingMedia;
+        var audioMedia;
       
-      return {
-             startRecording : function (callback) {
-                 var recordVoice = function(dirEntry) {
-                     var basePath = "";
+        return {
+            startRecording : function (callback) {
+                var recordVoice = function(dirEntry) {
+                    var basePath = "";
                      
-                     if (dirEntry) {
-                         basePath = dirEntry.toURL() + "/";
-                     }
+                    if (dirEntry) {
+                        basePath = dirEntry.toURL() + "/";
+                    }
 
-                     var mediaFilePath = basePath + (new Date()).getTime() + ".wav";
+                    var mediaFilePath = basePath + (new Date()).getTime() + ".wav";
                     
-                     var recordingSuccess = function() {
-                         callback.onSuccess(mediaFilePath);
-                     };            
+                    var recordingSuccess = function() {
+                        callback.onSuccess(mediaFilePath);
+                    };
                     
-                     recordingMedia = new Media(mediaFilePath, recordingSuccess, callback.onError);
+                    recordingMedia = new Media(mediaFilePath, recordingSuccess, callback.onError);
 
-                     // Record audio
-                     recordingMedia.startRecord(); 
-                 };
+                    // Record audio
+                    recordingMedia.startRecord();
+                };
                 
-                 if (device.platform === "Android") {
-                     var cb = {};
+                if (device.platform === "Android") {
+                    var cb = {};
                 
-                     cb.requestSuccess = recordVoice;              
-                     cb.requestError = callback.onError;
+                    cb.requestSuccess = recordVoice;
+                    cb.requestError = callback.onError;
 
-                     fileManager.requestApplicationDirectory(cb);     
-                 } else {
+                    fileManager.requestApplicationDirectory(cb);
+                } else {
 
-                     recordVoice();
-                 }
+                    recordVoice();
+                }
             },
             stopRecording : function () {
-            	if (recordingMedia) {
-            		recordingMedia.stopRecord();   
-                	recordingMedia.release();
+                if (recordingMedia) {
+                    recordingMedia.stopRecord();
+                    recordingMedia.release();
                 	
-                	recordingMedia = null;
+                    recordingMedia = null;
             	}
             },
             playVoice : function (filePath, callback) {
@@ -70,9 +69,7 @@ var MediaManager = (function () {
 	                            callback.onSuccess(filePath);
 	                        };
 	                    
-	                        fileCopyCallback.copyError = function(evt) {
-	                            console.log("Unexpected failure of File copy due to the following error: " + evt.target.error.code);
-	                        };                      
+	                        fileCopyCallback.copyError = callback.onError;                      
 	                    
 	                        fileManager.copyFileToAppDirectory(currentFilePath, fileCopyCallback);
 	                    } else {
@@ -98,16 +95,16 @@ var MediaManager = (function () {
                     recordingMedia = null;
                 } 
             }
+        };
     };
-  };
  
-  return {
-    getInstance: function () {
-      if (!instance) {
-          instance = createObject();
-      }
+    return {
+        getInstance: function () {
+            if (!instance) {
+                instance = createObject();
+            }
  
-      return instance;
-    }
-  }; 
+            return instance;
+        }
+    };
 })();
