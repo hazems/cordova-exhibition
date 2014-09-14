@@ -1,5 +1,5 @@
 (function() {
-    var mediaManager = MediaManager.getInstance();
+    var mediaManager = MediaManager.getInstance(), recInterval;
     
     $(document).on("pageinit", "#mediaFC", function(e) {
         e.preventDefault();

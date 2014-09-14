@@ -1,4 +1,4 @@
-﻿<xapCache source="C:\Users\Naglaa\Documents\GitHub\cordova-exhibition\platforms\wp8\Bin\Debug\CordovaAppProj_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="9/12/2014 3:23:21 AM">
+﻿<xapCache source="C:\Users\Naglaa\Documents\GitHub\cordova-exhibition\platforms\wp8\Bin\Debug\CordovaAppProj_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="9/14/2014 3:24:35 AM">
   <file source="C:\Users\Naglaa\Documents\GitHub\cordova-exhibition\platforms\wp8\obj\Debug\com.jsmobile.cordovaexhibition.dll" archivePath="com.jsmobile.cordovaexhibition.dll" lastWriteTime="9/12/2014 3:23:20 AM" />
   <file source="C:\Users\Naglaa\Documents\GitHub\cordova-exhibition\platforms\wp8\config.xml" archivePath="config.xml" lastWriteTime="9/12/2014 3:21:42 AM" />
   <file source="C:\Users\Naglaa\Documents\GitHub\cordova-exhibition\platforms\wp8\Images\appbar.back.rest.png" archivePath="Images\appbar.back.rest.png" lastWriteTime="3/14/2014 10:54:01 AM" />
@@ -11,7 +11,7 @@
   <file source="C:\Users\Naglaa\Documents\GitHub\cordova-exhibition\platforms\wp8\www\cordova.js" archivePath="www\cordova.js" lastWriteTime="9/12/2014 3:21:36 AM" />
   <file source="C:\Users\Naglaa\Documents\GitHub\cordova-exhibition\platforms\wp8\www\css\app.css" archivePath="www\css\app.css" lastWriteTime="9/12/2014 3:21:34 AM" />
   <file source="C:\Users\Naglaa\Documents\GitHub\cordova-exhibition\platforms\wp8\www\img\logo.png" archivePath="www\img\logo.png" lastWriteTime="9/12/2014 3:21:34 AM" />
-  <file source="C:\Users\Naglaa\Documents\GitHub\cordova-exhibition\platforms\wp8\www\index.html" archivePath="www\index.html" lastWriteTime="9/12/2014 3:21:34 AM" />
+  <file source="C:\Users\Naglaa\Documents\GitHub\cordova-exhibition\platforms\wp8\www\index.html" archivePath="www\index.html" lastWriteTime="9/14/2014 3:19:07 AM" />
   <file source="C:\Users\Naglaa\Documents\GitHub\cordova-exhibition\platforms\wp8\www\jqueryMobile\images\ajax-loader.gif" archivePath="www\jqueryMobile\images\ajax-loader.gif" lastWriteTime="9/12/2014 3:21:34 AM" />
   <file source="C:\Users\Naglaa\Documents\GitHub\cordova-exhibition\platforms\wp8\www\jqueryMobile\images\icons-png\action-black.png" archivePath="www\jqueryMobile\images\icons-png\action-black.png" lastWriteTime="9/12/2014 3:21:34 AM" />
   <file source="C:\Users\Naglaa\Documents\GitHub\cordova-exhibition\platforms\wp8\www\jqueryMobile\images\icons-png\action-white.png" archivePath="www\jqueryMobile\images\icons-png\action-white.png" lastWriteTime="9/12/2014 3:21:34 AM" />
@@ -218,33 +218,33 @@
   <file source="C:\Users\Naglaa\Documents\GitHub\cordova-exhibition\platforms\wp8\www\jqueryMobile\jquery.mobile-1.4.0.min.css" archivePath="www\jqueryMobile\jquery.mobile-1.4.0.min.css" lastWriteTime="9/12/2014 3:21:35 AM" />
   <file source="C:\Users\Naglaa\Documents\GitHub\cordova-exhibition\platforms\wp8\www\jqueryMobile\jquery.mobile-1.4.0.min.js" archivePath="www\jqueryMobile\jquery.mobile-1.4.0.min.js" lastWriteTime="9/12/2014 3:21:35 AM" />
   <file source="C:\Users\Naglaa\Documents\GitHub\cordova-exhibition\platforms\wp8\www\jqueryMobile\jquery.validate.min.js" archivePath="www\jqueryMobile\jquery.validate.min.js" lastWriteTime="9/12/2014 3:21:35 AM" />
-  <file source="C:\Users\Naglaa\Documents\GitHub\cordova-exhibition\platforms\wp8\www\js\api\AccelerometerManager.js" archivePath="www\js\api\AccelerometerManager.js" lastWriteTime="9/12/2014 3:21:35 AM" />
-  <file source="C:\Users\Naglaa\Documents\GitHub\cordova-exhibition\platforms\wp8\www\js\api\CameraManager.js" archivePath="www\js\api\CameraManager.js" lastWriteTime="9/12/2014 3:21:35 AM" />
-  <file source="C:\Users\Naglaa\Documents\GitHub\cordova-exhibition\platforms\wp8\www\js\api\CompassManager.js" archivePath="www\js\api\CompassManager.js" lastWriteTime="9/12/2014 3:21:35 AM" />
-  <file source="C:\Users\Naglaa\Documents\GitHub\cordova-exhibition\platforms\wp8\www\js\api\ConnectionManager.js" archivePath="www\js\api\ConnectionManager.js" lastWriteTime="9/12/2014 3:21:35 AM" />
-  <file source="C:\Users\Naglaa\Documents\GitHub\cordova-exhibition\platforms\wp8\www\js\api\ContactsManager.js" archivePath="www\js\api\ContactsManager.js" lastWriteTime="9/12/2014 3:21:35 AM" />
-  <file source="C:\Users\Naglaa\Documents\GitHub\cordova-exhibition\platforms\wp8\www\js\api\DeviceManager.js" archivePath="www\js\api\DeviceManager.js" lastWriteTime="9/12/2014 3:21:35 AM" />
-  <file source="C:\Users\Naglaa\Documents\GitHub\cordova-exhibition\platforms\wp8\www\js\api\FileManager.js" archivePath="www\js\api\FileManager.js" lastWriteTime="9/12/2014 3:21:35 AM" />
-  <file source="C:\Users\Naglaa\Documents\GitHub\cordova-exhibition\platforms\wp8\www\js\api\GeolocationManager.js" archivePath="www\js\api\GeolocationManager.js" lastWriteTime="9/12/2014 3:21:35 AM" />
-  <file source="C:\Users\Naglaa\Documents\GitHub\cordova-exhibition\platforms\wp8\www\js\api\GlobalizationManager.js" archivePath="www\js\api\GlobalizationManager.js" lastWriteTime="9/12/2014 3:21:35 AM" />
-  <file source="C:\Users\Naglaa\Documents\GitHub\cordova-exhibition\platforms\wp8\www\js\api\InAppBrowserManager.js" archivePath="www\js\api\InAppBrowserManager.js" lastWriteTime="9/12/2014 3:21:35 AM" />
-  <file source="C:\Users\Naglaa\Documents\GitHub\cordova-exhibition\platforms\wp8\www\js\api\MediaManager.js" archivePath="www\js\api\MediaManager.js" lastWriteTime="9/12/2014 3:21:35 AM" />
-  <file source="C:\Users\Naglaa\Documents\GitHub\cordova-exhibition\platforms\wp8\www\js\api\NotificationManager.js" archivePath="www\js\api\NotificationManager.js" lastWriteTime="9/12/2014 3:21:35 AM" />
-  <file source="C:\Users\Naglaa\Documents\GitHub\cordova-exhibition\platforms\wp8\www\js\api\StorageManager.js" archivePath="www\js\api\StorageManager.js" lastWriteTime="9/12/2014 3:21:35 AM" />
-  <file source="C:\Users\Naglaa\Documents\GitHub\cordova-exhibition\platforms\wp8\www\js\common.js" archivePath="www\js\common.js" lastWriteTime="9/12/2014 3:21:35 AM" />
-  <file source="C:\Users\Naglaa\Documents\GitHub\cordova-exhibition\platforms\wp8\www\js\vc\accelerometer.js" archivePath="www\js\vc\accelerometer.js" lastWriteTime="9/12/2014 3:21:35 AM" />
-  <file source="C:\Users\Naglaa\Documents\GitHub\cordova-exhibition\platforms\wp8\www\js\vc\camera.js" archivePath="www\js\vc\camera.js" lastWriteTime="9/12/2014 3:21:35 AM" />
-  <file source="C:\Users\Naglaa\Documents\GitHub\cordova-exhibition\platforms\wp8\www\js\vc\compass.js" archivePath="www\js\vc\compass.js" lastWriteTime="9/12/2014 3:21:35 AM" />
-  <file source="C:\Users\Naglaa\Documents\GitHub\cordova-exhibition\platforms\wp8\www\js\vc\connection.js" archivePath="www\js\vc\connection.js" lastWriteTime="9/12/2014 3:21:35 AM" />
-  <file source="C:\Users\Naglaa\Documents\GitHub\cordova-exhibition\platforms\wp8\www\js\vc\contactDetails.js" archivePath="www\js\vc\contactDetails.js" lastWriteTime="9/12/2014 3:21:35 AM" />
-  <file source="C:\Users\Naglaa\Documents\GitHub\cordova-exhibition\platforms\wp8\www\js\vc\contacts.js" archivePath="www\js\vc\contacts.js" lastWriteTime="9/12/2014 3:21:35 AM" />
-  <file source="C:\Users\Naglaa\Documents\GitHub\cordova-exhibition\platforms\wp8\www\js\vc\device.js" archivePath="www\js\vc\device.js" lastWriteTime="9/12/2014 3:21:35 AM" />
-  <file source="C:\Users\Naglaa\Documents\GitHub\cordova-exhibition\platforms\wp8\www\js\vc\geolocation.js" archivePath="www\js\vc\geolocation.js" lastWriteTime="9/12/2014 3:21:35 AM" />
-  <file source="C:\Users\Naglaa\Documents\GitHub\cordova-exhibition\platforms\wp8\www\js\vc\globalization.js" archivePath="www\js\vc\globalization.js" lastWriteTime="9/12/2014 3:21:35 AM" />
-  <file source="C:\Users\Naglaa\Documents\GitHub\cordova-exhibition\platforms\wp8\www\js\vc\inAppBrowser.js" archivePath="www\js\vc\inAppBrowser.js" lastWriteTime="9/12/2014 3:21:35 AM" />
-  <file source="C:\Users\Naglaa\Documents\GitHub\cordova-exhibition\platforms\wp8\www\js\vc\media.js" archivePath="www\js\vc\media.js" lastWriteTime="9/12/2014 3:21:35 AM" />
-  <file source="C:\Users\Naglaa\Documents\GitHub\cordova-exhibition\platforms\wp8\www\js\vc\notification.js" archivePath="www\js\vc\notification.js" lastWriteTime="9/12/2014 3:21:35 AM" />
-  <file source="C:\Users\Naglaa\Documents\GitHub\cordova-exhibition\platforms\wp8\www\js\vc\storage.js" archivePath="www\js\vc\storage.js" lastWriteTime="9/12/2014 3:21:35 AM" />
+  <file source="C:\Users\Naglaa\Documents\GitHub\cordova-exhibition\platforms\wp8\www\js\api\AccelerometerManager.js" archivePath="www\js\api\AccelerometerManager.js" lastWriteTime="9/14/2014 3:19:07 AM" />
+  <file source="C:\Users\Naglaa\Documents\GitHub\cordova-exhibition\platforms\wp8\www\js\api\CameraManager.js" archivePath="www\js\api\CameraManager.js" lastWriteTime="9/14/2014 3:19:07 AM" />
+  <file source="C:\Users\Naglaa\Documents\GitHub\cordova-exhibition\platforms\wp8\www\js\api\CompassManager.js" archivePath="www\js\api\CompassManager.js" lastWriteTime="9/14/2014 3:19:07 AM" />
+  <file source="C:\Users\Naglaa\Documents\GitHub\cordova-exhibition\platforms\wp8\www\js\api\ConnectionManager.js" archivePath="www\js\api\ConnectionManager.js" lastWriteTime="9/14/2014 3:19:07 AM" />
+  <file source="C:\Users\Naglaa\Documents\GitHub\cordova-exhibition\platforms\wp8\www\js\api\ContactsManager.js" archivePath="www\js\api\ContactsManager.js" lastWriteTime="9/14/2014 3:19:08 AM" />
+  <file source="C:\Users\Naglaa\Documents\GitHub\cordova-exhibition\platforms\wp8\www\js\api\DeviceManager.js" archivePath="www\js\api\DeviceManager.js" lastWriteTime="9/14/2014 3:19:08 AM" />
+  <file source="C:\Users\Naglaa\Documents\GitHub\cordova-exhibition\platforms\wp8\www\js\api\FileManager.js" archivePath="www\js\api\FileManager.js" lastWriteTime="9/14/2014 3:19:08 AM" />
+  <file source="C:\Users\Naglaa\Documents\GitHub\cordova-exhibition\platforms\wp8\www\js\api\GeolocationManager.js" archivePath="www\js\api\GeolocationManager.js" lastWriteTime="9/14/2014 3:19:08 AM" />
+  <file source="C:\Users\Naglaa\Documents\GitHub\cordova-exhibition\platforms\wp8\www\js\api\GlobalizationManager.js" archivePath="www\js\api\GlobalizationManager.js" lastWriteTime="9/14/2014 3:19:08 AM" />
+  <file source="C:\Users\Naglaa\Documents\GitHub\cordova-exhibition\platforms\wp8\www\js\api\InAppBrowserManager.js" archivePath="www\js\api\InAppBrowserManager.js" lastWriteTime="9/14/2014 3:19:08 AM" />
+  <file source="C:\Users\Naglaa\Documents\GitHub\cordova-exhibition\platforms\wp8\www\js\api\MediaManager.js" archivePath="www\js\api\MediaManager.js" lastWriteTime="9/14/2014 3:19:08 AM" />
+  <file source="C:\Users\Naglaa\Documents\GitHub\cordova-exhibition\platforms\wp8\www\js\api\NotificationManager.js" archivePath="www\js\api\NotificationManager.js" lastWriteTime="9/14/2014 3:19:08 AM" />
+  <file source="C:\Users\Naglaa\Documents\GitHub\cordova-exhibition\platforms\wp8\www\js\api\StorageManager.js" archivePath="www\js\api\StorageManager.js" lastWriteTime="9/14/2014 3:19:08 AM" />
+  <file source="C:\Users\Naglaa\Documents\GitHub\cordova-exhibition\platforms\wp8\www\js\common.js" archivePath="www\js\common.js" lastWriteTime="9/14/2014 3:19:08 AM" />
+  <file source="C:\Users\Naglaa\Documents\GitHub\cordova-exhibition\platforms\wp8\www\js\vc\accelerometer.js" archivePath="www\js\vc\accelerometer.js" lastWriteTime="9/11/2014 11:47:17 PM" />
+  <file source="C:\Users\Naglaa\Documents\GitHub\cordova-exhibition\platforms\wp8\www\js\vc\camera.js" archivePath="www\js\vc\camera.js" lastWriteTime="9/11/2014 11:47:17 PM" />
+  <file source="C:\Users\Naglaa\Documents\GitHub\cordova-exhibition\platforms\wp8\www\js\vc\compass.js" archivePath="www\js\vc\compass.js" lastWriteTime="9/11/2014 11:47:17 PM" />
+  <file source="C:\Users\Naglaa\Documents\GitHub\cordova-exhibition\platforms\wp8\www\js\vc\connection.js" archivePath="www\js\vc\connection.js" lastWriteTime="9/11/2014 11:47:17 PM" />
+  <file source="C:\Users\Naglaa\Documents\GitHub\cordova-exhibition\platforms\wp8\www\js\vc\contactDetails.js" archivePath="www\js\vc\contactDetails.js" lastWriteTime="9/11/2014 11:47:17 PM" />
+  <file source="C:\Users\Naglaa\Documents\GitHub\cordova-exhibition\platforms\wp8\www\js\vc\contacts.js" archivePath="www\js\vc\contacts.js" lastWriteTime="9/11/2014 11:47:17 PM" />
+  <file source="C:\Users\Naglaa\Documents\GitHub\cordova-exhibition\platforms\wp8\www\js\vc\device.js" archivePath="www\js\vc\device.js" lastWriteTime="9/11/2014 11:47:17 PM" />
+  <file source="C:\Users\Naglaa\Documents\GitHub\cordova-exhibition\platforms\wp8\www\js\vc\geolocation.js" archivePath="www\js\vc\geolocation.js" lastWriteTime="9/11/2014 11:47:17 PM" />
+  <file source="C:\Users\Naglaa\Documents\GitHub\cordova-exhibition\platforms\wp8\www\js\vc\globalization.js" archivePath="www\js\vc\globalization.js" lastWriteTime="9/11/2014 11:47:17 PM" />
+  <file source="C:\Users\Naglaa\Documents\GitHub\cordova-exhibition\platforms\wp8\www\js\vc\inAppBrowser.js" archivePath="www\js\vc\inAppBrowser.js" lastWriteTime="9/11/2014 11:47:17 PM" />
+  <file source="C:\Users\Naglaa\Documents\GitHub\cordova-exhibition\platforms\wp8\www\js\vc\media.js" archivePath="www\js\vc\media.js" lastWriteTime="9/14/2014 3:19:08 AM" />
+  <file source="C:\Users\Naglaa\Documents\GitHub\cordova-exhibition\platforms\wp8\www\js\vc\notification.js" archivePath="www\js\vc\notification.js" lastWriteTime="9/11/2014 11:47:17 PM" />
+  <file source="C:\Users\Naglaa\Documents\GitHub\cordova-exhibition\platforms\wp8\www\js\vc\storage.js" archivePath="www\js\vc\storage.js" lastWriteTime="9/11/2014 11:47:17 PM" />
   <file source="C:\Users\Naglaa\Documents\GitHub\cordova-exhibition\platforms\wp8\Plugins\org.apache.cordova.dialogs\notification-beep.wav" archivePath="Plugins\org.apache.cordova.dialogs\notification-beep.wav" lastWriteTime="9/12/2014 3:21:38 AM" />
   <file source="C:\Users\Naglaa\Documents\GitHub\cordova-exhibition\platforms\wp8\www\plugins\org.apache.cordova.battery-status\www\battery.js" archivePath="www\plugins\org.apache.cordova.battery-status\www\battery.js" lastWriteTime="9/12/2014 3:21:42 AM" />
   <file source="C:\Users\Naglaa\Documents\GitHub\cordova-exhibition\platforms\wp8\www\plugins\org.apache.cordova.camera\www\CameraConstants.js" archivePath="www\plugins\org.apache.cordova.camera\www\CameraConstants.js" lastWriteTime="9/12/2014 3:21:42 AM" />

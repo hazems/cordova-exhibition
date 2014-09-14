@@ -1,27 +1,26 @@
-//Singleton Object
 var GeolocationManager = (function () {     
-  var instance;
+    var instance;
  
-  function createObject() {
-      return {
-          getCurrentPosition: function (callback) {
-              navigator.geolocation.getCurrentPosition(callback.onSuccess, 
-                                                       callback.onError, 
-                                                       {
-                                                           timeout: 15000, 
-                                                           enableHighAccuracy: true 
-                                                       });
-          }
-      };
-  };
+    function createObject() {
+        return {
+            getCurrentPosition: function (callback) {
+                navigator.geolocation.getCurrentPosition(callback.onSuccess,
+                                                         callback.onError,
+                                                         {
+                                                             timeout: 15000,
+                                                             enableHighAccuracy: true
+                                                         });
+            }
+        };
+    };
  
-  return {
-    getInstance: function () {
-      if (!instance) {
-          instance = createObject();
-      }
+    return {
+        getInstance: function () {
+            if (!instance) {
+                instance = createObject();
+            }
  
-      return instance;
-    }
-  }; 
+            return instance;
+        }
+    };
 })();
